@@ -19,7 +19,7 @@ class LayoutTemplate : Template<HTML> {
         head {
             // Required meta tags
             meta(charset = "utf-8")
-            meta("viewport", "width=device-width, initial-scale=1, shrink-to-fit=no")
+            meta("viewport", "width=device-width, initial-scale=1, user-scalable=no")
             // Turbo
             script(src = "/webjars/hotwired__turbo/turbo.es2017-esm.js") { type = "module" }
             // Custom CSS
