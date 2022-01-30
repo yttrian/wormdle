@@ -19,7 +19,7 @@ import kotlinx.css.margin
 import kotlinx.css.rem
 import kotlinx.css.textTransform
 import kotlinx.css.width
-import org.yttr.lordle.game.GameView
+import org.yttr.lordle.game.GameController
 
 object DisplayStyle : Style {
     override fun CssBuilder.apply() {
@@ -30,7 +30,7 @@ object DisplayStyle : Style {
 
         ".letters" {
             display = Display.grid
-            gridTemplateColumns = GridTemplateColumns.repeat("${GameView.WORD_LENGTH}, 1fr")
+            gridTemplateColumns = GridTemplateColumns.repeat("${GameController.WORD_LENGTH}, 1fr")
         }
 
         ".letter" {
@@ -46,7 +46,7 @@ object DisplayStyle : Style {
             fontSize = 2.rem
         }
 
-        ".letters span" {
+        ".letters input + span" {
             display = Display.none
         }
 

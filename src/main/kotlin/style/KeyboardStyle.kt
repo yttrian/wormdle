@@ -30,7 +30,7 @@ import kotlinx.css.textAlign
 import kotlinx.css.textTransform
 import kotlinx.css.userSelect
 import kotlinx.css.width
-import org.yttr.lordle.game.GameView
+import org.yttr.lordle.game.GameController
 
 object KeyboardStyle : Style {
     override fun CssBuilder.apply() {
@@ -68,7 +68,7 @@ object KeyboardStyle : Style {
             cursor = Cursor.pointer
         }
 
-        (0..GameView.WORD_LENGTH).forEach { l ->
+        (0..GameController.WORD_LENGTH).forEach { l ->
             "input#l${l}e:not(:checked) ~ div#l${l}b" {
                 display = Display.none
             }

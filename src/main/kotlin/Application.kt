@@ -16,7 +16,6 @@ import kotlinx.css.CssBuilder
 import org.yttr.lordle.game.GameController
 import org.yttr.lordle.mvc.route
 import org.yttr.lordle.style.LordleStyle
-import java.time.LocalDate
 
 fun main(args: Array<String>): Unit = io.ktor.server.cio.EngineMain.main(args)
 
@@ -30,7 +29,6 @@ fun Application.module() {
 
     install(Webjars)
 
-    data class LordleSession(val guesses: List<String> = emptyList(), val day: LocalDate)
     install(Sessions) {
         cookie<LordleSession>("LORDLE_SESSION")
     }
@@ -46,3 +44,5 @@ fun Application.module() {
         }
     }
 }
+
+data class LordleSession(val day: Int, val guesses: List<String> = emptyList())

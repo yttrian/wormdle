@@ -16,8 +16,8 @@ import org.yttr.lordle.mvc.LayoutTemplate
 import org.yttr.lordle.mvc.View
 
 object GameView : View<GameModel> {
-    const val WORD_LENGTH: Int = 5
-    private const val MAX_ATTEMPTS: Int = 6
+    private const val WORD_LENGTH: Int = GameController.WORD_LENGTH
+    private const val MAX_ATTEMPTS: Int = GameController.MAX_ATTEMPTS
     private const val ALPHABET_LENGTH: Int = 26
     private val letters = (0 until ALPHABET_LENGTH).map { 'a' + it }
 
