@@ -26,9 +26,8 @@ object GameView : View<GameModel> {
                 h1 { +"Lordle" }
             }
 
-            form(method = FormMethod.post) {
-                val hints = hintClasses(model).joinToString(" ")
-                div("display $hints") {
+            form(method = FormMethod.post, classes = hintClasses(model).joinToString(" ")) {
+                div("display") {
                     letters(model)
                 }
 
@@ -47,6 +46,7 @@ object GameView : View<GameModel> {
         val wordLetters = model.word.toSet()
         val guessedLetters = model.guesses.flatMap { it.toSet() }
 
+        // FIXME: Count repeated letters and stop reporting when all found
         val somewhere = guessedLetters.intersect(wordLetters).map { c -> "$c-somewhere" }
 
         val nowhere = guessedLetters.minus(wordLetters).map { c -> "$c-nowhere" }
@@ -75,8 +75,9 @@ object GameView : View<GameModel> {
                 } else {
                     val guess = model.guesses.getOrNull(attempt)
                     (0 until WORD_LENGTH).forEach { l ->
-                        div("letter") {
-                            span { +(guess?.getOrNull(l)?.toString() ?: "") }
+                        val c = guess?.getOrNull(l)?.toString() ?: ""
+                        div("letter $c") {
+                            span { +c }
                         }
                     }
                 }
@@ -108,7 +109,7 @@ object GameView : View<GameModel> {
                                 }
                             }
                             row.forEach { c ->
-                                label {
+                                label("key $c") {
                                     htmlFor = "l$l" + "c$c"
                                     +c.toString()
                                 }

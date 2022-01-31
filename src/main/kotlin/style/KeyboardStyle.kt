@@ -68,6 +68,21 @@ object KeyboardStyle : Style {
             cursor = Cursor.pointer
         }
 
+        ('a'..'z').forEach { c ->
+            "form[class*='$c-at'] .key.$c" {
+                backgroundColor = Color.cornflowerBlue
+            }
+
+            ".$c-somewhere .key.$c" {
+                color = Color.black
+                backgroundColor = Color.yellow
+            }
+
+            ".$c-nowhere .key.$c" {
+                backgroundColor = Color.black
+            }
+        }
+
         (0..GameController.WORD_LENGTH).forEach { l ->
             "input#l${l}e:not(:checked) ~ div#l${l}b" {
                 display = Display.none
