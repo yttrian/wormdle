@@ -18,8 +18,7 @@ import org.yttr.lordle.mvc.View
 object GameView : View<GameModel> {
     private const val WORD_LENGTH: Int = GameController.WORD_LENGTH
     private const val MAX_ATTEMPTS: Int = GameController.MAX_ATTEMPTS
-    private const val ALPHABET_LENGTH: Int = 26
-    private val letters = (0 until ALPHABET_LENGTH).map { 'a' + it }
+    private val letters = 'a'..'z'
 
     override fun LayoutTemplate.apply(model: GameModel) {
         content {
@@ -28,7 +27,8 @@ object GameView : View<GameModel> {
             }
 
             form(method = FormMethod.post) {
-                div("display") {
+                val hints = hintClasses(model).joinToString(" ")
+                div("display $hints") {
                     letters(model)
                 }
 
@@ -37,6 +37,21 @@ object GameView : View<GameModel> {
                 keyboards()
             }
         }
+    }
+
+    private fun hintClasses(model: GameModel): List<String> {
+        val at = model.word.mapIndexedNotNull { index, c ->
+            if (model.guesses.any { it[index] == c }) "$c-at-$index" else null
+        }
+
+        val wordLetters = model.word.toSet()
+        val guessedLetters = model.guesses.flatMap { it.toSet() }
+
+        val somewhere = guessedLetters.intersect(wordLetters).map { c -> "$c-somewhere" }
+
+        val nowhere = guessedLetters.minus(wordLetters).map { c -> "$c-nowhere" }
+
+        return at + somewhere + nowhere
     }
 
     private fun FlowContent.letters(model: GameModel) {

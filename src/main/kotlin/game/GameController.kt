@@ -41,7 +41,7 @@ object GameController : Controller<GameModel>(GameView) {
     override fun Route.routes() {
         get {
             val session = context.lordleSession
-            val word = words?.getOrNull(session.day)
+            val word = words?.getOrNull(session.day)?.lowercase()
 
             if (word != null) {
                 context.respondView(GameModel(word, session.guesses))
@@ -54,9 +54,11 @@ object GameController : Controller<GameModel>(GameView) {
             val session = context.lordleSession
             val formParameters = context.receiveParameters()
 
-            val entry = (0 until WORD_LENGTH).map { l -> formParameters["l$l"] }.joinToString("")
+            val entry = (0 until WORD_LENGTH).map { l ->
+                formParameters["l$l"]?.lowercase()
+            }.joinToString("")
 
-            if (session.guesses.size <= MAX_ATTEMPTS) {
+            if (session.guesses.size <= MAX_ATTEMPTS && entry.all { it in 'a'..'z' }) {
                 context.lordleSession = LordleSession(session.day, session.guesses + entry)
             }
 
