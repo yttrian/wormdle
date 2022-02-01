@@ -31,7 +31,9 @@ object GameView : View<GameModel> {
                     letters(model)
                 }
 
-                div("notes")
+                div("notes") {
+                    model.session.message?.unaryPlus()
+                }
 
                 keyboards()
             }
@@ -40,11 +42,11 @@ object GameView : View<GameModel> {
 
     private fun hintClasses(model: GameModel): List<String> {
         val at = model.word.mapIndexedNotNull { index, c ->
-            if (model.guesses.any { it[index] == c }) "$c-at-$index" else null
+            if (model.session.guesses.any { it[index] == c }) "$c-at-$index" else null
         }
 
         val wordLetters = model.word.toSet()
-        val guessedLetters = model.guesses.flatMap { it.toSet() }
+        val guessedLetters = model.session.guesses.flatMap { it.toSet() }
 
         // FIXME: Count repeated letters and stop reporting when all found
         val somewhere = guessedLetters.intersect(wordLetters).map { c -> "$c-somewhere" }
@@ -55,7 +57,7 @@ object GameView : View<GameModel> {
     }
 
     private fun FlowContent.letters(model: GameModel) {
-        val currentAttempt = model.guesses.size
+        val currentAttempt = model.session.guesses.size
         (0 until MAX_ATTEMPTS).forEach { attempt ->
             div("letters") {
                 if (currentAttempt == attempt) {
@@ -66,14 +68,14 @@ object GameView : View<GameModel> {
                                     id = "l$l" + "c$c"
                                     name = "l$l"
                                     value = c.toString()
-                                    disabled = l == WORD_LENGTH
+                                    disabled = (l == WORD_LENGTH || model.session.guesses.lastOrNull() == model.word)
                                 }
                                 span { +c.toString() }
                             }
                         }
                     }
                 } else {
-                    val guess = model.guesses.getOrNull(attempt)
+                    val guess = model.session.guesses.getOrNull(attempt)
                     (0 until WORD_LENGTH).forEach { l ->
                         val c = guess?.getOrNull(l)?.toString() ?: ""
                         div("letter $c") {

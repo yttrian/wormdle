@@ -25,9 +25,12 @@ object GameController : Controller<GameModel>(GameView) {
     const val MAX_ATTEMPTS: Int = 6
 
     private val config = ConfigFactory.load()
-    private val random = Random(config.getInt("lordle.seed"))
     private val epoch = LocalDate.parse(config.getString("lordle.epoch"))
-    private val words = javaClass.classLoader.getResource("words.txt")?.readText()?.lines()?.shuffled(random)
+    private val words by lazy {
+        val lines = javaClass.classLoader.getResource("words.txt")?.readText()?.lines()
+        val random = Random(config.getInt("lordle.seed"))
+        lines?.map(String::lowercase)?.shuffled(random)
+    }
 
     private var ApplicationCall.lordleSession: LordleSession
         get() {
@@ -41,10 +44,10 @@ object GameController : Controller<GameModel>(GameView) {
     override fun Route.routes() {
         get {
             val session = context.lordleSession
-            val word = words?.getOrNull(session.day)?.lowercase()
+            val word = words?.getOrNull(session.day)
 
             if (word != null) {
-                context.respondView(GameModel(word, session.guesses))
+                context.respondView(GameModel(word, session))
             } else {
                 context.respondText("No more words!")
             }
@@ -59,7 +62,15 @@ object GameController : Controller<GameModel>(GameView) {
             }.joinToString("")
 
             if (session.guesses.size <= MAX_ATTEMPTS && entry.all { it in 'a'..'z' }) {
-                context.lordleSession = LordleSession(session.day, session.guesses + entry)
+                context.lordleSession = when {
+                    words?.contains(entry) ?: false -> LordleSession(session.day, session.guesses + entry)
+                    entry == words?.getOrNull(session.day) -> LordleSession(
+                        session.day,
+                        session.guesses + entry,
+                        "You got it!"
+                    )
+                    else -> LordleSession(session.day, session.guesses, "Not in word list")
+                }
             }
 
             context.response.headers.append(HttpHeaders.Location, context.request.uri)

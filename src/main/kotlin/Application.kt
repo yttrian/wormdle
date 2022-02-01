@@ -45,4 +45,4 @@ fun Application.module() {
     }
 }
 
-data class LordleSession(val day: Int, val guesses: List<String> = emptyList())
+data class LordleSession(val day: Int, val guesses: List<String> = emptyList(), val message: String? = null)
