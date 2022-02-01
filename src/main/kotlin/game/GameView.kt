@@ -23,7 +23,7 @@ object GameView : View<GameModel> {
     override fun LayoutTemplate.apply(model: GameModel) {
         content {
             header {
-                h1 { +"Lordle" }
+                h1 { +"Lordle #${model.session.day + 1}" }
             }
 
             form(method = FormMethod.post, classes = hintClasses(model).joinToString(" ")) {
