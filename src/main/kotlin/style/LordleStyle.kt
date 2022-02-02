@@ -61,6 +61,7 @@ object LordleStyle : Style {
         }
 
         append(HeaderStyle)
+        append(ModalStyle)
         append(DisplayStyle)
         append(NotesStyle)
         append(KeyboardStyle)

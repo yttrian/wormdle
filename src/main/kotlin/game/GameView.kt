@@ -12,6 +12,7 @@ import kotlinx.html.id
 import kotlinx.html.input
 import kotlinx.html.label
 import kotlinx.html.span
+import kotlinx.html.textArea
 import org.yttr.lordle.mvc.LayoutTemplate
 import org.yttr.lordle.mvc.View
 
@@ -22,8 +23,24 @@ object GameView : View<GameModel> {
 
     override fun LayoutTemplate.apply(model: GameModel) {
         content {
+            val title = "Lordle ${model.session.day + 1}"
             header {
-                h1 { +"Lordle #${model.session.day + 1}" }
+                h1 { +title }
+            }
+
+            input(InputType.checkBox) {
+                id = "modal"
+                checked = model.session.guesses.lastOrNull() == model.word
+            }
+            label("modal") {
+                htmlFor = "modal"
+                textArea {
+                    readonly = true
+                    +"$title ${model.session.guesses.size}/$MAX_ATTEMPTS\n\n"
+                    +model.session.guesses.joinToString("\n") { guess ->
+                        Marker.generate(model.word, guess).joinToString("") { it.emoji }
+                    }
+                }
             }
 
             form(method = FormMethod.post, classes = hintClasses(model).joinToString(" ")) {
