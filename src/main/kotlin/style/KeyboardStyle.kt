@@ -31,6 +31,7 @@ import kotlinx.css.textTransform
 import kotlinx.css.userSelect
 import kotlinx.css.width
 import org.yttr.lordle.game.GameController
+import org.yttr.lordle.game.Marker
 
 object KeyboardStyle : Style {
     override fun CssBuilder.apply() {
@@ -69,17 +70,17 @@ object KeyboardStyle : Style {
         }
 
         ('a'..'z').forEach { c ->
-            "form[class*='$c-at'] .key.$c" {
-                backgroundColor = Color.cornflowerBlue
+            ".$c-here.$c-somewhere .key.$c" {
+                backgroundColor = Marker.Here.color
             }
 
             ".$c-somewhere .key.$c" {
                 color = Color.black
-                backgroundColor = Color.yellow
+                backgroundColor = Marker.Somewhere.color
             }
 
             ".$c-nowhere .key.$c" {
-                backgroundColor = Color.black
+                backgroundColor = Marker.Nowhere.color
             }
         }
 

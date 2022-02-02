@@ -22,10 +22,9 @@ import kotlinx.css.rem
 import kotlinx.css.textTransform
 import kotlinx.css.width
 import org.yttr.lordle.game.GameController
+import org.yttr.lordle.game.Marker
 
 object DisplayStyle : Style {
-    private val letters = 'a'..'z'
-
     override fun CssBuilder.apply() {
         ".display" {
             display = Display.grid
@@ -50,25 +49,21 @@ object DisplayStyle : Style {
             fontSize = 2.rem
         }
 
-        (0..GameController.WORD_LENGTH).forEach { l ->
-            letters.forEach { c ->
-                ".$c-at-$l .letter.$c:nth-child(${l + 1})" {
-                    color = Color.black
-                    backgroundColor = Color.cornflowerBlue
-                    borderColor = Color.cornflowerBlue
-                }
+        ".letter.here" {
+            color = Color.black
+            backgroundColor = Marker.Here.color
+            borderColor = Marker.Here.color
+        }
 
-                ".$c-somewhere .letter.$c" {
-                    color = Color.black
-                    backgroundColor = Color.yellow
-                    borderColor = Color.yellow
-                }
+        ".letter.somewhere" {
+            color = Color.black
+            backgroundColor = Marker.Somewhere.color
+            borderColor = Marker.Somewhere.color
+        }
 
-                ".$c-nowhere .letter.$c" {
-                    backgroundColor = Color.black
-                    borderColor = Color.black
-                }
-            }
+        ".letter.nowhere" {
+            backgroundColor = Marker.Nowhere.color
+            borderColor = Marker.Nowhere.color
         }
 
         ".letters input + span" {

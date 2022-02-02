@@ -41,19 +41,18 @@ object GameView : View<GameModel> {
     }
 
     private fun hintClasses(model: GameModel): List<String> {
-        val at = model.word.mapIndexedNotNull { index, c ->
-            if (model.session.guesses.any { it[index] == c }) "$c-at-$index" else null
+        val here = model.word.mapIndexedNotNull { index, c ->
+            if (model.session.guesses.any { it[index] == c }) "$c-here" else null
         }
 
         val wordLetters = model.word.toSet()
         val guessedLetters = model.session.guesses.flatMap { it.toSet() }
 
-        // FIXME: Count repeated letters and stop reporting when all found
         val somewhere = guessedLetters.intersect(wordLetters).map { c -> "$c-somewhere" }
 
         val nowhere = guessedLetters.minus(wordLetters).map { c -> "$c-nowhere" }
 
-        return at + somewhere + nowhere
+        return here + somewhere + nowhere
     }
 
     private fun FlowContent.letters(model: GameModel) {
@@ -76,9 +75,10 @@ object GameView : View<GameModel> {
                     }
                 } else {
                     val guess = model.session.guesses.getOrNull(attempt)
+                    val markers = Marker.generate(model.word, guess ?: "")
                     (0 until WORD_LENGTH).forEach { l ->
                         val c = guess?.getOrNull(l)?.toString() ?: ""
-                        div("letter $c") {
+                        div("letter " + (markers.getOrNull(l)?.toString() ?: "")) {
                             span { +c }
                         }
                     }

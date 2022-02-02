@@ -19,4 +19,6 @@ sealed class Marker(val color: Color, val emoji: String) {
             }
         }
     }
+
+    override fun toString(): String = javaClass.simpleName.lowercase()
 }
