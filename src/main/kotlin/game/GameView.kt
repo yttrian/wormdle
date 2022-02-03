@@ -30,13 +30,14 @@ object GameView : View<GameModel> {
 
             input(InputType.checkBox) {
                 id = "modal"
-                checked = model.session.guesses.lastOrNull() == model.word
+                checked = model.isOver
             }
             label("modal") {
                 htmlFor = "modal"
                 textArea {
                     readonly = true
-                    +"$title ${model.session.guesses.size}/$MAX_ATTEMPTS\n\n"
+                    val finalCount = if (model.isWin) model.session.guesses.size.toString() else "X"
+                    +"$title $finalCount/$MAX_ATTEMPTS\n\n"
                     +model.session.guesses.joinToString("\n") { guess ->
                         Marker.generate(model.word, guess).joinToString("") { it.emoji }
                     }
@@ -84,7 +85,7 @@ object GameView : View<GameModel> {
                                     id = "l$l" + "c$c"
                                     name = "l$l"
                                     value = c.toString()
-                                    disabled = (l == WORD_LENGTH || model.session.guesses.lastOrNull() == model.word)
+                                    disabled = (l == WORD_LENGTH || model.isOver)
                                 }
                                 span { +c.toString() }
                             }

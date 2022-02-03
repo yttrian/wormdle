@@ -63,12 +63,12 @@ object GameController : Controller<GameModel>(GameView) {
 
             if (session.guesses.size <= MAX_ATTEMPTS && entry.all { it in 'a'..'z' }) {
                 context.lordleSession = when {
-                    words?.contains(entry) ?: false -> LordleSession(session.day, session.guesses + entry)
                     entry == words?.getOrNull(session.day) -> LordleSession(
                         session.day,
                         session.guesses + entry,
                         "You got it!"
                     )
+                    words?.contains(entry) ?: false -> LordleSession(session.day, session.guesses + entry)
                     else -> LordleSession(session.day, session.guesses, "Not in word list")
                 }
             }

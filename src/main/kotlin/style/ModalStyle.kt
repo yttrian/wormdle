@@ -8,6 +8,7 @@ import kotlinx.css.Display
 import kotlinx.css.JustifyContent
 import kotlinx.css.Position
 import kotlinx.css.Resize
+import kotlinx.css.TextAlign
 import kotlinx.css.alignItems
 import kotlinx.css.backgroundColor
 import kotlinx.css.borderRadius
@@ -22,6 +23,7 @@ import kotlinx.css.pct
 import kotlinx.css.position
 import kotlinx.css.rem
 import kotlinx.css.resize
+import kotlinx.css.textAlign
 import kotlinx.css.width
 
 object ModalStyle : Style {
@@ -40,8 +42,9 @@ object ModalStyle : Style {
         }
 
         ".modal textarea" {
-            height = 15.rem
+            height = 17.rem
             width = 15.rem
+            textAlign = TextAlign.center
             fontSize = 1.5.rem
             padding = "2rem"
             resize = Resize.none
