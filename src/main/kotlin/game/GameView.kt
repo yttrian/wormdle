@@ -11,10 +11,12 @@ import kotlinx.html.header
 import kotlinx.html.id
 import kotlinx.html.input
 import kotlinx.html.label
+import kotlinx.html.small
 import kotlinx.html.span
 import kotlinx.html.textArea
 import org.yttr.lordle.mvc.LayoutTemplate
 import org.yttr.lordle.mvc.View
+import java.time.ZoneId
 
 object GameView : View<GameModel> {
     private const val WORD_LENGTH: Int = GameController.WORD_LENGTH
@@ -26,6 +28,7 @@ object GameView : View<GameModel> {
             val title = "Lordle ${model.session.day + 1}"
             header {
                 h1 { +title }
+                small { +"Resets daily at midnight ${ZoneId.systemDefault()}" }
             }
 
             input(InputType.checkBox) {
