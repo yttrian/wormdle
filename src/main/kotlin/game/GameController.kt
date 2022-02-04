@@ -17,6 +17,8 @@ import io.ktor.sessions.set
 import org.yttr.lordle.WormdleSession
 import org.yttr.lordle.mvc.Controller
 import java.time.LocalDate
+import java.time.ZoneId
+import java.time.ZonedDateTime
 import java.time.temporal.ChronoUnit
 import kotlin.random.Random
 
@@ -24,9 +26,11 @@ object GameController : Controller<GameModel>(GameView) {
     const val WORD_LENGTH: Int = 5
     const val MAX_ATTEMPTS: Int = 6
     private const val WORD_LIST_SPLITS = 3
+    private const val DAILY_RESET = 9
 
     private val config = ConfigFactory.load()
-    private val epoch = LocalDate.parse(config.getString("lordle.epoch"))
+    private val timezone = ZoneId.of("America/Los_Angeles")
+    private val epoch = LocalDate.parse(config.getString("lordle.epoch")).atTime(DAILY_RESET, 0).atZone(timezone)
     private val sources by lazy {
         val lines = javaClass.classLoader.getResource("words.txt")?.readText()?.lines()
         lines?.filter { it.isNotBlank() }?.associate {
@@ -41,7 +45,7 @@ object GameController : Controller<GameModel>(GameView) {
 
     private var ApplicationCall.lordleSession: WormdleSession
         get() {
-            val day = ChronoUnit.DAYS.between(epoch, LocalDate.now()).toInt()
+            val day = ChronoUnit.DAYS.between(epoch, ZonedDateTime.now(timezone)).toInt()
             val session = sessions.get<WormdleSession>()?.takeIf { it.day == day } ?: WormdleSession(day)
             sessions.set(session)
             return session
