@@ -5,6 +5,7 @@ import kotlinx.css.BorderStyle
 import kotlinx.css.Color
 import kotlinx.css.CssBuilder
 import kotlinx.css.Display
+import kotlinx.css.FontWeight
 import kotlinx.css.JustifyContent
 import kotlinx.css.Position
 import kotlinx.css.Resize
@@ -15,7 +16,9 @@ import kotlinx.css.borderRadius
 import kotlinx.css.borderStyle
 import kotlinx.css.color
 import kotlinx.css.display
+import kotlinx.css.fontFamily
 import kotlinx.css.fontSize
+import kotlinx.css.fontWeight
 import kotlinx.css.height
 import kotlinx.css.justifyContent
 import kotlinx.css.padding
@@ -42,14 +45,16 @@ object ModalStyle : Style {
         }
 
         ".modal textarea" {
+            fontFamily = "inherit"
+            fontWeight = FontWeight.bold
             height = 17.rem
             width = 15.rem
             textAlign = TextAlign.center
             fontSize = 1.5.rem
             padding = "2rem"
             resize = Resize.none
-            color = Color.white
-            backgroundColor = Color.darkSlateGrey
+            color = Color.black
+            backgroundColor = Color("#b3e174")
             borderStyle = BorderStyle.none
             borderRadius = .5.rem
         }
