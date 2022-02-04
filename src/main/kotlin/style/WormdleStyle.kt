@@ -21,7 +21,7 @@ import kotlinx.css.margin
 import kotlinx.css.padding
 import kotlinx.css.pct
 
-object LordleStyle : Style {
+object WormdleStyle : Style {
     private val defaultFonts = listOf(
         "-apple-system",
         "BlinkMacSystemFont",

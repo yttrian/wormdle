@@ -27,7 +27,7 @@ object GameView : View<GameModel> {
 
     override fun LayoutTemplate.apply(model: GameModel) {
         content {
-            val title = "Lordle ${model.session.day + 1}"
+            val title = "Wormdle ${model.session.day + 1}"
             header {
                 h1 { +title }
                 small { +"Resets daily at midnight ${ZoneId.systemDefault()}" }

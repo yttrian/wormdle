@@ -23,8 +23,8 @@ class LayoutTemplate : Template<HTML> {
             // Turbo
             script(src = "/webjars/hotwired__turbo/turbo.es2017-esm.js") { type = "module" }
             // Custom CSS
-            link("/lordle.css", "stylesheet")
-            title("Lordle")
+            link("/wordle.css", "stylesheet")
+            title("Wormdle")
         }
         body {
             insert(content)

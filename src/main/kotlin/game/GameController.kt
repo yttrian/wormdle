@@ -14,7 +14,7 @@ import io.ktor.routing.post
 import io.ktor.sessions.get
 import io.ktor.sessions.sessions
 import io.ktor.sessions.set
-import org.yttr.lordle.LordleSession
+import org.yttr.lordle.WormdleSession
 import org.yttr.lordle.mvc.Controller
 import java.time.LocalDate
 import java.time.temporal.ChronoUnit
@@ -39,10 +39,10 @@ object GameController : Controller<GameModel>(GameView) {
         sources.keys.shuffled(random)
     }
 
-    private var ApplicationCall.lordleSession: LordleSession
+    private var ApplicationCall.lordleSession: WormdleSession
         get() {
             val day = ChronoUnit.DAYS.between(epoch, LocalDate.now()).toInt()
-            val session = sessions.get<LordleSession>()?.takeIf { it.day == day } ?: LordleSession(day)
+            val session = sessions.get<WormdleSession>()?.takeIf { it.day == day } ?: WormdleSession(day)
             sessions.set(session)
             return session
         }
@@ -71,13 +71,13 @@ object GameController : Controller<GameModel>(GameView) {
 
             if (session.guesses.size <= MAX_ATTEMPTS && entry.all { it in 'a'..'z' }) {
                 context.lordleSession = when {
-                    entry == words.getOrNull(session.day) -> LordleSession(
+                    entry == words.getOrNull(session.day) -> WormdleSession(
                         session.day,
                         session.guesses + entry,
                         "You got it!"
                     )
-                    words.contains(entry) -> LordleSession(session.day, session.guesses + entry)
-                    else -> LordleSession(session.day, session.guesses, "Not in word list")
+                    words.contains(entry) -> WormdleSession(session.day, session.guesses + entry)
+                    else -> WormdleSession(session.day, session.guesses, "Not in word list")
                 }
             }
 

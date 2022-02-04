@@ -6,6 +6,8 @@ import io.ktor.features.CallLogging
 import io.ktor.features.Compression
 import io.ktor.features.ConditionalHeaders
 import io.ktor.http.ContentType
+import io.ktor.http.content.resource
+import io.ktor.http.content.static
 import io.ktor.response.respondText
 import io.ktor.routing.get
 import io.ktor.routing.routing
@@ -15,7 +17,7 @@ import io.ktor.webjars.Webjars
 import kotlinx.css.CssBuilder
 import org.yttr.lordle.game.GameController
 import org.yttr.lordle.mvc.route
-import org.yttr.lordle.style.LordleStyle
+import org.yttr.lordle.style.WormdleStyle
 
 fun main(args: Array<String>): Unit = io.ktor.server.cio.EngineMain.main(args)
 
@@ -30,19 +32,23 @@ fun Application.module() {
     install(Webjars)
 
     install(Sessions) {
-        cookie<LordleSession>("LORDLE_SESSION")
+        cookie<WormdleSession>("WORMDLE_SESSION")
     }
 
     routing {
         route("/", GameController)
 
         // https://ktor.io/docs/css-dsl.html#use_css
-        get("/lordle.css") {
-            with(LordleStyle) {
+        get("/wordle.css") {
+            with(WormdleStyle) {
                 context.respondText(CssBuilder().apply { apply() }.toString(), ContentType.Text.CSS)
             }
+        }
+
+        static {
+            resource("favicon.ico")
         }
     }
 }
 
-data class LordleSession(val day: Int, val guesses: List<String> = emptyList(), val message: String? = null)
+data class WormdleSession(val day: Int, val guesses: List<String> = emptyList(), val message: String? = null)
