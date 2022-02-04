@@ -3,6 +3,8 @@ package org.yttr.lordle.game
 import kotlinx.html.FlowContent
 import kotlinx.html.FormMethod
 import kotlinx.html.InputType
+import kotlinx.html.a
+import kotlinx.html.br
 import kotlinx.html.button
 import kotlinx.html.div
 import kotlinx.html.form
@@ -53,7 +55,20 @@ object GameView : View<GameModel> {
                 }
 
                 div("notes") {
-                    model.session.message?.unaryPlus()
+                    div {
+                        model.session.message?.let {
+                            +it
+                            if (model.isOver) {
+                                br()
+                            }
+                        }
+                        if (model.isOver) {
+                            +"\"${model.word}\" from "
+                            a("https://www.ishtar-collective.net/${model.slug}?highlight=${model.word}") {
+                                +model.name
+                            }
+                        }
+                    }
                 }
 
                 keyboards()

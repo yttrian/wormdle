@@ -23,13 +23,20 @@ import kotlin.random.Random
 object GameController : Controller<GameModel>(GameView) {
     const val WORD_LENGTH: Int = 5
     const val MAX_ATTEMPTS: Int = 6
+    private const val WORD_LIST_SPLITS = 3
 
     private val config = ConfigFactory.load()
     private val epoch = LocalDate.parse(config.getString("lordle.epoch"))
-    private val words by lazy {
+    private val sources by lazy {
         val lines = javaClass.classLoader.getResource("words.txt")?.readText()?.lines()
+        lines?.filter { it.isNotBlank() }?.associate {
+            val (word, slug, name) = it.split(" ", limit = WORD_LIST_SPLITS)
+            word to (slug to name)
+        } ?: emptyMap()
+    }
+    private val words by lazy {
         val random = Random(config.getInt("lordle.seed"))
-        lines?.map(String::lowercase)?.shuffled(random)
+        sources.keys.shuffled(random)
     }
 
     private var ApplicationCall.lordleSession: LordleSession
@@ -44,10 +51,11 @@ object GameController : Controller<GameModel>(GameView) {
     override fun Route.routes() {
         get {
             val session = context.lordleSession
-            val word = words?.getOrNull(session.day)
+            val word = words.getOrNull(session.day)
 
             if (word != null) {
-                context.respondView(GameModel(word, session))
+                val (slug, name) = sources.getValue(word)
+                context.respondView(GameModel(word, slug, name, session))
             } else {
                 context.respondText("No more words!")
             }
@@ -63,12 +71,12 @@ object GameController : Controller<GameModel>(GameView) {
 
             if (session.guesses.size <= MAX_ATTEMPTS && entry.all { it in 'a'..'z' }) {
                 context.lordleSession = when {
-                    entry == words?.getOrNull(session.day) -> LordleSession(
+                    entry == words.getOrNull(session.day) -> LordleSession(
                         session.day,
                         session.guesses + entry,
                         "You got it!"
                     )
-                    words?.contains(entry) ?: false -> LordleSession(session.day, session.guesses + entry)
+                    words.contains(entry) -> LordleSession(session.day, session.guesses + entry)
                     else -> LordleSession(session.day, session.guesses, "Not in word list")
                 }
             }

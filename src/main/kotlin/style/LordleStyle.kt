@@ -14,8 +14,6 @@ import kotlinx.css.flex
 import kotlinx.css.flexDirection
 import kotlinx.css.fontFamily
 import kotlinx.css.form
-import kotlinx.css.h1
-import kotlinx.css.header
 import kotlinx.css.height
 import kotlinx.css.html
 import kotlinx.css.input
@@ -49,14 +47,6 @@ object LordleStyle : Style {
             padding = "0"
             display = Display.flex
             flexDirection = FlexDirection.column
-        }
-
-        header {
-            margin = "1rem 0 1rem"
-        }
-
-        h1 {
-            margin = "0"
         }
 
         input {
