@@ -51,4 +51,9 @@ fun Application.module() {
     }
 }
 
-data class WormdleSession(val day: Int, val guesses: List<String> = emptyList(), val message: String? = null)
+data class WormdleSession(
+    val day: Int,
+    val guesses: List<String> = emptyList(),
+    val last: String? = null,
+    val message: String? = null
+)

@@ -71,7 +71,7 @@ object GameView : View<GameModel> {
                     }
                 }
 
-                keyboards()
+                keyboards(model)
             }
         }
     }
@@ -103,6 +103,7 @@ object GameView : View<GameModel> {
                                     id = "l$l" + "c$c"
                                     name = "l$l"
                                     value = c.toString()
+                                    checked = c == model.retry?.getOrNull(l)
                                     disabled = (l == WORD_LENGTH || model.isOver)
                                 }
                                 span { +c.toString() }
@@ -123,13 +124,13 @@ object GameView : View<GameModel> {
         }
     }
 
-    private fun FlowContent.keyboards() {
+    private fun FlowContent.keyboards(model: GameModel) {
         div("keyboard") {
             (0 until WORD_LENGTH).forEach { l ->
                 input(InputType.radio) {
                     id = "l$l" + "e"
                     name = "l$l"
-                    checked = true
+                    checked = model.retry == null
                 }
             }
             (0..WORD_LENGTH).forEach { l ->

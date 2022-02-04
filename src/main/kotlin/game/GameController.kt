@@ -74,10 +74,11 @@ object GameController : Controller<GameModel>(GameView) {
                     entry == words.getOrNull(session.day) -> WormdleSession(
                         session.day,
                         session.guesses + entry,
+                        entry,
                         "You got it!"
                     )
                     words.contains(entry) -> WormdleSession(session.day, session.guesses + entry)
-                    else -> WormdleSession(session.day, session.guesses, "Not in word list")
+                    else -> WormdleSession(session.day, session.guesses, entry, "Not in word list")
                 }
             }
 
