@@ -34,7 +34,7 @@ death items/shroud-of-flies Shroud of Flies
 quest items/classified-237 Classified
 store items/acd0-feedback-fence-2 ACD/0 Feedback Fence
 avert items/curse-of-foresight Curse of Foresight
-trash record/praxic-order Praxic Order
+trash records/praxic-order Praxic Order
 level items/crucible-3 Crucible
 think entries/team-spirit Team Spirit
 child entries/confession-of-hope-part-one Confession of Hope | Part One
@@ -52,7 +52,7 @@ honor items/brave-titan-gauntlets-2 Brave Titan Gauntlets
 tower items/return-to-hawthorne-2 Return to Hawthorne
 enter entries/the-witch The Witch
 check items/retrieve-your-ship Retrieve Your Ship
-light record/brilliance-32 Brilliance 3.2
+light records/brilliance-32 Brilliance 3.2
 elsie entries/braytech-sn0treads BrayTech Sn0Treads
 ikora items/speak-to-ikora-rey Speak to Ikora Rey
 grows items/cryptid-46c-4 Cryptid 4.6c
@@ -105,13 +105,13 @@ weary cards/wretched-knight Wretched Knight
 shone items/lantern-horns Lantern Horns
 sword cards/xlix-forever-and-a-blade XLIX: Forever And A Blade
 ended items/io-treasure-map-9 Io Treasure Map
-break record/the-accolade The Accolade
+break records/the-accolade The Accolade
 teben entries/viii-secrets VIII: Secrets
 shine entries/entry-v Entry V
 space entries/revanche-iv Revanche IV
 share entries/emissary Emissary
 ghost items/solstice-ghost-shells Solstice Ghost Shells
-fresh record/legacy Legacy
+fresh records/legacy Legacy
 doubt cards/regicide Regicide
 style items/green-spotlight-effects Green Spotlight Effects
 minor entries/the-leviathan The Leviathan
@@ -137,7 +137,7 @@ cloak items/cloak-of-tekmor-2 Cloak of Tekmor
 shoot cards/ghost-fragment-exo-2 Ghost Fragment: Exo 2
 sound items/bike-horn-2 Bike Horn
 dance entries/irrealis Irrealis
-awful record/fortitude-31 Fortitude 3.1
+awful records/fortitude-31 Fortitude 3.1
 sheer cards/virgo-prohibition Virgo Prohibition
 every entries/the-final-shape The Final Shape
 ghaul items/speak-with-tess-in-the-tower-5 Speak with Tess in the Tower
@@ -188,7 +188,7 @@ queen cards/wanted-kaliks-12 WANTED: Kaliks-12
 diary entries/all-in All-In
 kiosk items/a-stylish-return-2 A Stylish Return
 scorn items/pulse-rifle-alpha-frame-2 Pulse Rifle Alpha Frame
-chest record/the-black-needle The Black Needle
+chest records/the-black-needle The Black Needle
 offer entries/is-it-you Is it you?
 relay items/duck-horn Duck Horn
 shell items/the-warmind-resurgent The Warmind, Resurgent
@@ -199,7 +199,7 @@ sends entries/dawning-before-the-dawning Dawning Before the Dawning
 wired items/prost-fr3 Prost FR3
 tried cards/heart-of-crota Heart of Crota
 front entries/ana-black-box Ana: Black Box
-leave record/am-i-to-cast-a-shadow "Am I to cast a Shadow?"
+leave records/am-i-to-cast-a-shadow "Am I to cast a Shadow?"
 stack items/recycle-synths Recycle Synths
 hatch entries/skyburners-oath Skyburner's Oath
 meant entries/chapter-3-the-cult-of-personality Chapter 3 – The Cult of Personality
@@ -217,7 +217,7 @@ fully entries/seventh-seraph-plate Seventh Seraph Plate
 cloth items/house-banners House Banners
 guide items/shade-at-the-gates Shade at the Gates
 tread entries/tradition-is-bigger-than-you Tradition Is Bigger Than You
-alive record/zavala Zavala
+alive records/zavala Zavala
 usual entries/ringer Ringer
 since entries/chapter-2-postexilic Chapter 2 – Postexilic
 spoke entries/notorious-reaper-bond Notorious Reaper Bond
@@ -240,7 +240,7 @@ bloom items/voidwalker-2 Voidwalker
 daily items/daily-business Daily Business
 arena cards/the-drifter The Drifter
 quiet items/hush Hush
-wound record/the-murder-of-cayde-6 The Murder of Cayde-6
+wound records/the-murder-of-cayde-6 The Murder of Cayde-6
 aksis cards/vosik-the-archpriest Vosik, the Archpriest
 quick cards/ghost-fragment-the-dark-age-2 Ghost Fragment: The Dark Age 2
 owing entries/solstice-gloves-resplendent Solstice Gloves (Resplendent)
@@ -276,7 +276,7 @@ issue entries/fr0st-ee5 Fr0st-EE5
 plant entries/drerir Ódrerir
 trace items/azoth-bend-ii-4 Azoth Bend II
 moved cards/crimson-days Crimson Days
-worse record/a-light-in-the-darkness A Light In The Darkness
+worse records/a-light-in-the-darkness A Light In The Darkness
 favor entries/false-promises False Promises
 along entries/a-friendly-face A Friendly Face
 gauge cards/ghost-fragment-vertigo Ghost Fragment: Vertigo
@@ -287,7 +287,7 @@ aside entries/the-recluse The Recluse
 mania entries/dlxxix DLXXIX.
 alice entries/cosmogyre-i Cosmogyre I
 spare items/rogue-45 Rogue 4.5
-mixed record/legacy Legacy
+mixed records/legacy Legacy
 worth cards/control Control
 relic cards/upgrade-materials Upgrade Materials
 thigh entries/solstice-gloves-resplendent Solstice Gloves (Resplendent)
@@ -336,14 +336,14 @@ diver entries/the-tenth-avatar The Tenth Avatar
 lever cards/ghost-fragment-mysteries-2 Ghost Fragment: Mysteries 2
 react entries/kings-wrath King's Wrath
 ayane entries/takanome-wings Takanome Wings
-gleam record/apocrypha Apocrypha
+gleam records/apocrypha Apocrypha
 recon items/sparrow-s-10v Sparrow S-10V
 verge entries/regarding-the-great-disaster Regarding the Great Disaster
 obeys entries/contrast CONTRAST
 peace entries/bastion Bastion
 stock items/composite-stock Composite Stock
 hoped entries/fold Fold
-crack record/legacy Legacy
+crack records/legacy Legacy
 cover entries/xi-the-anti-logic XI: The Anti-Logic
 cargo entries/just-another-day-at-the-tower Just Another Day at the Tower
 scent entries/seventh-seraph-cloak Seventh Seraph Cloak
@@ -405,15 +405,15 @@ drawn entries/solstice-robes-resplendent Solstice Robes (Resplendent)
 price items/dust-rock-blues Dust Rock Blues
 touch entries/invisible-scars Invisible Scars
 grunt entries/entry-i Entry I
-vault record/legacy Legacy
+vault records/legacy Legacy
 scalp entries/faces-like-shields Faces Like Shields
 raise cards/the-wakening The Wakening
 older entries/imponent-ii Imponent II
 worry items/youre-the-guardian You're the Guardian
 mourn items/the-conqueror-2 The Conqueror 2
-scour record/the-sundial The Sundial
+scour records/the-sundial The Sundial
 helga entries/entries-104-105 Entries 104, 105
-wiped record/joining Joining
+wiped records/joining Joining
 error entries/opulent-scholar-bond Opulent Scholar Bond
 prize entries/ixxii-apocrypha IX.X.II: Apocrypha
 sheen items/rpc-valiant-6 RPC Valiant
@@ -421,7 +421,7 @@ witch entries/trinity-ghoul Trinity Ghoul
 worst entries/regarding-omnigul-will-of-crota Regarding Omnigul, Will of Crota
 timur cards/lord-timur Lord Timur
 rumor entries/ix-embrace IX: Embrace
-drift record/legacy Legacy
+drift records/legacy Legacy
 voice entries/ana-frayed Ana: Frayed
 blast entries/hiding-at-home Hiding at Home
 early items/mobius-conduit Mobius Conduit
@@ -460,19 +460,19 @@ exact entries/contraverse-hold Contraverse Hold
 hezen items/mantic-zealot-cuirass Mantic Zealot Cuirass
 robot entries/solstice-strides-rekindled Solstice Strides (Rekindled)
 cloud entries/regarding-phogoth-the-untamed Regarding Phogoth, the Untamed
-cried record/hope Hope
+cried records/hope Hope
 greet items/winterhart-mask Winterhart Mask
 swear items/silent-oracle Silent Oracle
 fancy items/fieldplate-type-10-4 Fieldplate Type 10
 crowd entries/chords-of-meaning Chords of Meaning
 money entries/imponent-iii Imponent III
 title entries/message-from-aunor-iii Message from Aunor III
-vital record/legacy-pt-2 Legacy Pt 2
+vital records/legacy-pt-2 Legacy Pt 2
 swale items/murvaux-type-0-8 Murvaux Type 0
 beast entries/apex-predator Apex Predator
 brood cards/xlvi-the-gift-mast XLVI: The Gift Mast
 swamp items/bog-wild-10-4 Bog Wild 1.0
-watch record/the-accolade The Accolade
+watch records/the-accolade The Accolade
 basic items/tracker-103-2 Tracker 1.0.3
 embed entries/equitis-shade-cowl Equitis Shade Cloak
 drone entries/is-it-you Is it you?
@@ -490,7 +490,7 @@ seize entries/a-cautionary-tale A Cautionary Tale
 trans items/the-cut-and-run The Cut and Run
 belly entries/revanche-iv Revanche IV
 mercy entries/opulent-stalker-mask Opulent Stalker Mask
-lurks record/a-friend-in-need A Friend In Need
+lurks records/a-friend-in-need A Friend In Need
 empty entries/where-loyalty-lies Where Loyalty Lies
 build entries/the-unsolvable-problem The Unsolvable Problem
 tiger items/shrouded-stripes Shrouded Stripes
@@ -548,7 +548,7 @@ marry entries/a-blind-eye-toward-tomorrow A Blind Eye Toward Tomorrow
 andal entries/the-tall-tale The Tall Tale
 leapt cards/the-taken The Taken
 knock entries/stronghold Stronghold
-align record/legacy-pt-2 Legacy Pt 2
+align records/legacy-pt-2 Legacy Pt 2
 unity items/vanguard-divide Vanguard Divide
 strip items/omega-mechanos-grasps Omega Mechanos Grasps
 panic cards/ghost-fragment-meridian-bay Ghost Fragment: Meridian Bay
@@ -571,9 +571,9 @@ skiff cards/ghost-fragment-fallen-3 Ghost Fragment: Fallen 3
 stash items/warlocks-initiation Warlock's Initiation
 trial entries/reverie-dawn-gloves Reverie Dawn Gloves
 hated entries/seventh-seraph-helmet Seventh Seraph Helmet
-eaten record/false-idols False Idols
-label record/legacy Legacy
-wrack record/legacy-pt-2 Legacy Pt 2
+eaten records/false-idols False Idols
+label records/legacy Legacy
+wrack records/legacy-pt-2 Legacy Pt 2
 shark entries/is-it-you Is it you?
 loyal items/antinomy-xvi Antinomy XVI
 agree entries/extended-family Extended Family
@@ -584,11 +584,11 @@ faint items/radiant-matrix Radiant Matrix
 eater items/eater-of-worlds-ornament-15 Eater of Worlds Ornament
 coast items/taken-assault-venus Taken Assault: Venus
 usurp cards/xlii- XLII: <>|<>|<>
-fault record/sisters Sisters
+fault records/sisters Sisters
 valus items/mask-of-nohr-3 Mask of Nohr
 thief cards/the-taken-vandal The Taken: Vandal
 chase cards/iii-the-oath III: The Oath
-slink record/legacy Legacy
+slink records/legacy Legacy
 trick entries/the-last-word The Last Word
 alike entries/the-mountaintop The Mountaintop
 pitch entries/2-burden-part-ii 2: Burden Part II
@@ -605,11 +605,11 @@ south entries/entry-115-116-117 Entry 115, 116, 117
 feast entries/mcxxxv MCXXXV.
 broad entries/on-the-hunt On the Hunt
 spend items/brilliant-starfish-shell Brilliant Starfish Shell
-slick record/legacy Legacy
+slick records/legacy Legacy
 track items/srl-record-book-vol-1 SRL Record Book
 jarus entries/shadows-cloak Shadow's Cloak
 enjoy cards/sparrow Sparrow
-satin record/legacy Legacy
+satin records/legacy Legacy
 altar entries/viii-a-sacrifice-of-self VIII: A Sacrifice of Self
 india items/mythos-hack-41-12 Mythos Hack 4.1
 froze entries/notorious-reaper-bond Notorious Reaper Bond
@@ -657,9 +657,9 @@ chain items/poison-courier-shell Poison Courier Shell
 liked entries/invisible-scars Invisible Scars
 quite items/agema-type-3 Agema Type 3
 slide items/abacus-shell Abacus Shell
-awake record/the-accolade The Accolade
+awake records/the-accolade The Accolade
 grief items/vigil-of-heroes-44 Vigil of Heroes
-sever record/legacy Legacy
+sever records/legacy Legacy
 plead entries/growing Growing
 shied cards/titan-vanguard Titan Vanguard
 purge items/izanagis-burden Izanagi's Burden
@@ -727,18 +727,18 @@ dinas entries/dinas-emrys Dinas Emrys
 ketch items/splicer-intel-relay-3 Splicer Intel Relay
 trawl items/mida-multi-tool-2 MIDA Multi-Tool
 theft entries/regarding-ghaul Regarding Ghaul
-shirk record/letter-from-cayde Letter from Cayde
+shirk records/letter-from-cayde Letter from Cayde
 brine entries/reactchooseact react|choose|act
 lying entries/awakened-shell Awakened Shell
 asher items/a-single-sweater-arm A Single Sweater Arm
 dress items/coronation-mark Coronation Mark
 snare items/in-a-fog In a Fog
-dimly record/legacy Legacy
+dimly records/legacy Legacy
 split entries/district-125 District 125
 revel items/crucible-legacy Crucible Legacy
 pause entries/our-small-steps Our Small Steps
 flock items/mark-of-remembrance Mark of Remembrance
-idiot record/the-job The Job
+idiot records/the-job The Job
 shame entries/fleet Fleet
 large items/reputation-bundle Reputation Bundle
 noble items/rpc-valiant-3 RPC Valiant
@@ -779,7 +779,7 @@ scale entries/the-water-sun-part-ii The Water Sun, Part II
 fifty entries/the-water-sun-part-ii The Water Sun, Part II
 bowed entries/sunshot Sunshot
 dwarf cards/ghost-fragment-ghosts Ghost Fragment: Ghosts
-pilot record/legacy-pt-2 Legacy Pt 2
+pilot records/legacy-pt-2 Legacy Pt 2
 enina entries/contact CONTACT
 scull entries/the-water-sun-part-ii The Water Sun, Part II
 blame entries/the-good-fight-2 The Good Fight
@@ -797,7 +797,7 @@ hover items/bounty-hunter-2 Bounty Hunter
 cadet items/cosmonaut-galahad Cosmonaut Galahad
 cheap entries/asher-observation Asher: Observation
 sindu items/helm-of-the-ace-defiant-3 Helm of the Ace-Defiant
-relax record/legacy-pt-2 Legacy Pt 2
+relax records/legacy-pt-2 Legacy Pt 2
 maury entries/the-tenth-avatar The Tenth Avatar
 angel entries/irrealis Irrealis
 flood items/insight-vikti-boots Insight Vikti Boots
@@ -866,7 +866,7 @@ satou items/bladesmiths-memory-mask-2 Bladesmith's Memory Mask
 aimed items/hakke-precision-frame Häkke Precision Frame
 edict cards/ghost-fragment-legends-3 Ghost Fragment: Legends 3
 posed entries/seventh-seraph-helmet Seventh Seraph Helmet
-enact record/false-idols False Idols
+enact records/false-idols False Idols
 yearn entries/eye-of-another-world Eye of Another World
 kalki entries/unsecuredoutcry unsecured/OUTCRY
 thumb entries/dlxxviii DLXXVIII.
@@ -876,7 +876,7 @@ chunk entries/bright-side-of-a-bad-idea Bright Side of a Bad Idea
 hardy entries/hardys-control Hardy's Control
 cared items/poultry-petting Poultry Petting
 smash items/lost-and-found-2 Lost and Found
-glide record/legacy-pt-2 Legacy Pt 2
+glide records/legacy-pt-2 Legacy Pt 2
 train items/vernal-growth-gauntlets Vernal Growth Gauntlets
 bravo items/trajan-b Trajan-B
 durga cards/ghost-fragment-thorn-3 Ghost Fragment: Thorn 3
@@ -885,7 +885,7 @@ slave cards/xlviii-aiat-aiat-aiat-aiat-aiat XLVIII: aiat, aiat, aiat, aiat, aiat
 crust cards/ghost-fragment-awoken Ghost Fragment: Awoken
 paste entries/heaven-or-hell Heaven or Hell
 chill entries/the-tenth-avatar The Tenth Avatar
-blare record/legacy-pt-2 Legacy Pt 2
+blare records/legacy-pt-2 Legacy Pt 2
 comms entries/hiding-at-home Hiding at Home
 cheer items/titan-and-warlock Titan and Warlock
 jelly cards/i-predators I: Predators
@@ -919,7 +919,7 @@ joxer entries/plate-of-the-great-hunt Plate of the Great Hunt
 hoist entries/the-scholar The Scholar
 shelf items/moonfang-x7-rig Moonfang-X7 Rig
 prior items/generated-polarized-fractaline Generated Polarized Fractaline
-tevis record/mementos-from-the-wild-302289383 Mementos from the Wild (302289383)
+tevis records/mementos-from-the-wild-302289383 Mementos from the Wild (302289383)
 cower cards/the-taken-thrall The Taken: Thrall
 tawil entries/the-gate The Gate
 cuppa items/cup-of-tea Cup of Tea
@@ -928,7 +928,7 @@ arath cards/xxviii-king-of-shapes XXVIII: King of Shapes
 rends cards/the-dreadnaught The Dreadnaught
 alarm entries/tractor-cannon Tractor Cannon
 linde items/dead-light-helm Dead Light Helm
-slope record/legacy Legacy
+slope records/legacy Legacy
 mundi entries/antaeus-wards Antaeus Wards
 hobby items/extropy-morph-2 Extropy Morph
 gloom entries/elegy-for-callum-sol-and-callums-refrain Elegy for Callum Sol and Callum's Refrain
@@ -938,7 +938,7 @@ adapt cards/i-predators I: Predators
 halve entries/tyrannocide-ii Tyrannocide II
 paint entries/flowing-cowl-coda Flowing Cowl (CODA)
 kneel entries/zenith-of-your-kind Zenith of Your Kind
-boyle record/the-accolade The Accolade
+boyle records/the-accolade The Accolade
 inept cards/osiris Osiris
 kinox entries/apostate Apostate
 aloud entries/the-recluse The Recluse
@@ -975,9 +975,9 @@ wrest items/kell-rising Kell Rising
 frown entries/ancient-apocalypse-mark Ancient Apocalypse Mark
 dusty entries/roll-call Roll Call
 unfed entries/katabasis Katabasis
-crest record/hope Hope
+crest records/hope Hope
 henge entries/on-the-hunt On the Hunt
-noted record/praxic-order Praxic Order
+noted records/praxic-order Praxic Order
 steam items/caldera-fr1 Caldera-FR1
 slept items/cuirass-of-the-hezen-lords Cuirass of the Hezen Lords
 reuse cards/siva SIVA
@@ -986,18 +986,18 @@ clash items/clasher Clasher
 tidal entries/jussive Jussive
 stalk entries/a-gift-of-madness A Gift of Madness
 barge entries/tradition-is-bigger-than-you Tradition Is Bigger Than You
-candy record/splendor-26 Splendor 2.6
-dulls record/legacy-pt-2 Legacy Pt 2
+candy records/splendor-26 Splendor 2.6
+dulls records/legacy-pt-2 Legacy Pt 2
 tamed cards/ghost-fragment-cathedral-of-dusk Ghost Fragment: Cathedral of Dusk
 erase items/praetorian-foil Praetorian Foil
 proxy cards/thalnok-fanatic-of-crota Thalnok, Fanatic of Crota
 dogma items/firebreak Firebreak
-stony record/legacy Legacy
+stony records/legacy Legacy
 filth cards/the-lighthouse The Lighthouse
 safer items/anti-extinction-grasps-2 Anti-Extinction Grasps
 evade cards/ghost-fragment-fallen-2 Ghost Fragment: Fallen 2
 banal entries/seventh-seraph-strides Seventh Seraph Strides
-arose record/fortitude-31 Fortitude 3.1
+arose records/fortitude-31 Fortitude 3.1
 alpha entries/estival-excursion Estival Excursion
 awoke entries/the-nine The Nine
 farce entries/gemini-jester Gemini Jester
@@ -1021,18 +1021,18 @@ repay entries/imponent-iii Imponent III
 fiber items/barebones-sl-19 Barebones SL-19
 stall entries/a-touch-of-style A Touch of Style
 unfit cards/ice-breaker Ice Breaker
-foggy record/legacy-pt-2 Legacy Pt 2
+foggy records/legacy-pt-2 Legacy Pt 2
 joint entries/potential Potential
 quote entries/the-prospector The Prospector
 agema items/agema--type-1 Agema  Type 1
 humor entries/stark-baffler Stark Baffler
 joked entries/hiding-at-home Hiding at Home
 synth entries/where-loyalty-lies Where Loyalty Lies
-mahal record/praxic-order Praxic Order
+mahal records/praxic-order Praxic Order
 slung entries/5-moths-to-flame-part-ii 5: Moths to Flame Part II
 sneer items/mark-of-lost-charge-2 Mark of Lost Charge
 upset cards/legends-and-mysteries-rezyl-azzir Legends and Mysteries: Rezyl Azzir
-amber record/glory-21 Glory 2.1
+amber records/glory-21 Glory 2.1
 civil cards/crucible-quartermaster Crucible Quartermaster
 erupt entries/vance-passeri Vance: Passeri
 leash entries/showdown Showdown
@@ -1046,10 +1046,10 @@ venne entries/the-sixth-seal-part-i The Sixth Seal, Part I
 mormu cards/mormu-xol-spawn Mormu, Xol Spawn
 broom entries/dawning-helpers Dawning Helpers
 grate cards/queens-ransom Queen's Ransom
-stead record/maintenance-operations-log-30037 Maintenance Operations Log 30037
+stead records/maintenance-operations-log-30037 Maintenance Operations Log 30037
 spake entries/dccii DCCII.
 brown cards/ghost-fragment-ghosts Ghost Fragment: Ghosts
-stale record/legacy-pt-2 Legacy Pt 2
+stale records/legacy-pt-2 Legacy Pt 2
 micah entries/the-bandwagon The Bandwagon
 visor entries/knucklehead-radar Knucklehead Radar
 draft entries/entry-ii Entry II
@@ -1058,13 +1058,13 @@ piled items/lightning-mark Lightning Mark
 tribe items/equitis-shade-grips Equitis Shade Grips
 maker cards/noruusk-servant-of-oryx Noru'usk, Servant of Oryx
 shiny items/bond-of-the-raven-shard Bond of the Raven Shard
-piton record/dust Dust
+piton records/dust Dust
 repel items/block-z-shell Block-Z Shell
 louis items/eliksni-birdseed Eliksni Birdseed
 dazed entries/temptations-mark Temptation's Mark
 dirge items/atonement-tau-11 Atonement Tau
 surge items/temporal-surge Temporal Surge
-login record/legacy Legacy
+login records/legacy Legacy
 riled entries/ghost-fragment-vyhars-ghost Ghost Fragment: Vyhar's Ghost
 devna entries/imponent-v Imponent V
 spiky entries/solstice-vest-rekindled Solstice Vest (Rekindled)
@@ -1093,9 +1093,9 @@ mossy entries/epistemic Epistemic
 siege entries/seventh-seraph-gauntlets Seventh Seraph Gauntlets
 xenos items/xenos-shore-ornament-3 Xenos Shore Ornament
 slain cards/ghost-fragment-fallen-5 Ghost Fragment: Fallen 5
-ratty record/the-accolade The Accolade
+ratty records/the-accolade The Accolade
 darbi entries/caretaker Caretaker
-quist record/brilliance-32 Brilliance 3.2
+quist records/brilliance-32 Brilliance 3.2
 fuzzy cards/ghost-fragment-old-russia-2 Ghost Fragment: Old Russia 2
 keyed entries/ancient-apocalypse-strides Ancient Apocalypse Strides
 borne items/shadows-grips-3 Shadow's Grips
@@ -1112,18 +1112,18 @@ shout entries/ringer Ringer
 limen entries/palingenesis-iii Palingenesis III
 vigil entries/drerir Ódrerir
 aksor cards/taniks-the-scarred Taniks, the Scarred
-messy record/remembrance Remembrance
+messy records/remembrance Remembrance
 creak entries/cosmogyre-iii Cosmogyre III
 adept items/light-in-the-dark Light in the Dark
 naked cards/ghost-fragment-hunter Ghost Fragment: Hunter
 flung cards/wanted-beltrik-the-veiled WANTED: Beltrik, the Veiled
 snarl entries/revanche-v Revanche V
 polar cards/xlv-id-shut-them-all-in-cells XLV: I'd shut them all in cells.
-pared record/endure Endure
+pared records/endure Endure
 versa entries/compliments Compliments
 zhalo items/zhalo-supercell-and-shock-hazard Zhalo Supercell and Shock Hazard
 racer entries/comrades-in-arms Comrades in Arms
-porch record/legacy-pt-2 Legacy Pt 2
+porch records/legacy-pt-2 Legacy Pt 2
 screw cards/hand-of-crota Hand of Crota
 hydra entries/actchoosereact act|choose|react
 vapor items/refurbished-izanami-igniter-2 Refurbished Izanami Igniter
@@ -1135,7 +1135,7 @@ umbra items/psi-umbra-i Psi Umbra I
 sheet entries/ecstasiate-i Ecstasiate I
 bared items/valakadyn Valakadyn
 fritz entries/no-heroes-here No Heroes Here
-venom record/legacy Legacy
+venom records/legacy Legacy
 nexus items/target-sekrion TARGET: Sekrion
 clove cards/crossroads Crossroads
 churn entries/into-the-fray Into the Fray
@@ -1189,7 +1189,7 @@ shrug cards/xxxii-majestic-majestic XXXII: Majestic. Majestic.
 doggy items/all-right-lets-go All Right, Let's GO!
 milky items/kairos-function-plate Kairos Function Plate
 tends entries/the-pain-of-whats-right The Pain of What's Right
-fluke record/legacy-pt-2 Legacy Pt 2
+fluke records/legacy-pt-2 Legacy Pt 2
 verse items/five-golden-rings-bundle Five Golden Rings Bundle
 irxis cards/ghost-fragment-fallen-4 Ghost Fragment: Fallen 4
 stave entries/regarding-eriss-fireteam Regarding Eris's Fireteam
@@ -1210,10 +1210,10 @@ vosik cards/vosik-the-archpriest Vosik, the Archpriest
 torus cards/vestian-dynasty Vestian Dynasty
 adorn items/new-exotic-weapon-ornaments-3 New Exotic Weapon Ornaments
 baked cards/mercury Mercury
-sicko record/the-sundial The Sundial
+sicko records/the-sundial The Sundial
 quack items/duck-horn-2 Duck Horn
 odder entries/mihaylovas-triumph Mihaylova's Triumph
-tacky record/legacy Legacy
+tacky records/legacy Legacy
 earns cards/telthor-unborn Telthor, Unborn
 nance entries/last-bastion-shell Last Bastion Shell
 cased entries/queenslaw Queenslaw
@@ -1226,7 +1226,7 @@ fence entries/acd0-feedback-fence ACD/0 Feedback Fence
 peril entries/a-touch-of-style A Touch of Style
 jaren cards/ghost-fragment-the-last-word-5 Ghost Fragment: The Last Word 5
 crypt entries/10-the-discovery 10. THE DISCOVERY
-clone record/legacy-pt-2 Legacy Pt 2
+clone records/legacy-pt-2 Legacy Pt 2
 rocky entries/misraaks Misraaks
 spasm entries/travelers-chosen Traveler's Chosen
 gully entries/death-to-kells Death to Kells
@@ -1274,7 +1274,7 @@ spray entries/faces-like-shields Faces Like Shields
 fella items/dead-end-cure-21-3 Dead End Cure 2.1
 copse entries/dreaming Dreaming
 bluff entries/our-choices-define-us Our Choices Define Us
-slice record/hearts Hearts
+slice records/hearts Hearts
 spunk entries/seventh-seraph-helmet Seventh Seraph Helmet
 slate entries/civilian-atrium-south Civilian Atrium South
 steed items/solstice-greaves-scorched Solstice Greaves (Scorched)
@@ -1311,13 +1311,13 @@ circa items/atonement-tau-8 Atonement Tau
 sewer entries/the-stacks The Stacks
 newer cards/ghost-fragment-fallen-4 Ghost Fragment: Fallen 4
 randy entries/hardline Hardline
-sling record/what-gives-me-pause What Gives Me Pause
+sling records/what-gives-me-pause What Gives Me Pause
 finer entries/no-such-thing-as-coincidence No Such Thing as Coincidence
 reify entries/palingenesis-ii Palingenesis II
-undid record/the-accolade The Accolade
+undid records/the-accolade The Accolade
 tying entries/the-vow The Vow
 midha items/jasper-carcanet Jasper Carcanet
-patsy record/false-idols False Idols
+patsy records/false-idols False Idols
 salvo cards/projection-rifle Projection Rifle
 delhi items/lost-memory-fragment Lost Memory Fragment
 maxim items/cloak-of-the-ironsworn Cloak of the Ironsworn
@@ -1325,7 +1325,7 @@ tasty items/delicious-explosion-3 Delicious Explosion
 stout items/sovereign-grips Sovereign Grips
 bathe items/damaged-warlock-robe Damaged Warlock Robe
 cramp entries/palingenesis-i Palingenesis I
-gauss record/legacy Legacy
+gauss records/legacy Legacy
 tuyet items/ego-talon-bond Ego Talon Bond
 clink entries/potential Potential
 ramen entries/frumious-cloak Frumious Cloak
@@ -1335,7 +1335,7 @@ virus entries/one-thousand-voices One Thousand Voices
 choke entries/travelers-chosen Traveler's Chosen
 skein entries/fideicide-i Fideicide I
 meted entries/solstice-bond-magnificent Solstice Bond (Magnificent)
-furor record/false-idols False Idols
+furor records/false-idols False Idols
 mouse entries/mouse Mouse
 vista entries/revanche-ii Revanche II
 kiyot items/neoteric-kiyot-hunter-bundle Neoteric Kiyot Hunter Bundle
@@ -1349,8 +1349,8 @@ suite cards/ghost-fragment-fallen-5 Ghost Fragment: Fallen 5
 niobe items/hubris-of-niobe Hubris of Niobe
 woken cards/legends-and-mysteries-rezyl-azzir Legends and Mysteries: Rezyl Azzir
 taker entries/blasphemer Blasphemer
-grime record/the-black-needle The Black Needle
-bosom record/what-gives-me-pause What Gives Me Pause
+grime records/the-black-needle The Black Needle
+bosom records/what-gives-me-pause What Gives Me Pause
 bushy items/vest-of-the-jade-rabbit Vest of the Jade Rabbit
 craze cards/frontier Frontier
 xiana entries/the-water-sun-part-i The Water Sun, Part I
@@ -1368,7 +1368,7 @@ widow cards/ghost-fragment-widows-court Ghost Fragment: Widow's Court
 erect entries/ghost-fragment-gunnvors-ghost Ghost Fragment: Gunnvor's Ghost
 begat cards/malok-pride-of-oryx Malok, Pride of Oryx
 drank cards/vault-of-glass Vault of Glass
-debug record/actions-of-mutual-friends Actions of Mutual Friends
+debug records/actions-of-mutual-friends Actions of Mutual Friends
 cooed entries/ancient-apocalypse-vest Ancient Apocalypse Vest
 patio items/mercury-treasure-map-8 Mercury Treasure Map
 tenth entries/the-chaperone The Chaperone
@@ -1381,8 +1381,8 @@ lefty cards/micha-99-40 Micha 99-40
 eagle items/makeshift-scarf Makeshift Scarf
 manse entries/sv-112-predator SV-112 Predator
 expel cards/quests-introduction Quests Introduction
-prune record/what-gives-me-pause What Gives Me Pause
-drown record/legacy Legacy
+prune records/what-gives-me-pause What Gives Me Pause
+drown records/legacy Legacy
 donut items/dawnings-gift-ikora Dawning's Gift: Ikora
 amiss entries/honored Honored
 bipod entries/2-burden-part-ii 2: Burden Part II
@@ -1396,7 +1396,7 @@ ouros entries/sunshot Sunshot
 sybil entries/divinity Divinity
 naval items/war-mantis-9 War Mantis
 spoof cards/ghost-fragment-the-reef-3 Ghost Fragment: The Reef 3
-slosh record/legacy-pt-2 Legacy Pt 2
+slosh records/legacy-pt-2 Legacy Pt 2
 idyll entries/the-cambrian-explosion The Cambrian Explosion
 imbue items/mended-awoken-talisman Mended Awoken Talisman
 afire entries/petulant PETULANT
@@ -1404,7 +1404,7 @@ talon cards/ghost-fragment-warlock Ghost Fragment: Warlock
 bleak entries/13-margins-part-ii 13: Margins Part II
 snuck items/edz-treasure-map EDZ Treasure Map
 runic entries/ghost-fragment-gimble-4s-ghost Ghost Fragment: Gimble-4's Ghost
-urged record/the-accolade The Accolade
+urged records/the-accolade The Accolade
 elect entries/16-politics 16: Politics
 honed entries/a-new-legend-to-guide-them A New Legend to Guide Them
 keres items/imperial-treasure-map-11 Imperial Treasure Map
@@ -1417,23 +1417,23 @@ sneak items/be-sneaky Be Sneaky
 theus entries/solstice-helm-resplendent Solstice Helm (Resplendent)
 input entries/district-125 District 125
 braga entries/revelations-and-invitations Revelations and Invitations
-guile record/false-idols False Idols
+guile records/false-idols False Idols
 pizza entries/qiaos-passing Qiao's Passing
 azzir cards/rezyl-azzir-before-these-walls Rezyl Azzir - Before These Walls
-quell record/remembrance Remembrance
+quell records/remembrance Remembrance
 topaz entries/solstice-helm-rekindled Solstice Helm (Rekindled)
 aroma items/dark-ether-cane-4 Dark Ether Cane
 evoke items/inseparable-shaders-pack Inseparable Shaders Pack
 elude entries/confession-of-hope-part-two Confession of Hope | Part Two
 loken cards/ghost-fragment-the-last-word Ghost Fragment: The Last Word
 heave entries/exegesis Exegesis
-gazed record/the-black-needle The Black Needle
-prick record/legacy-pt-2 Legacy Pt 2
+gazed records/the-black-needle The Black Needle
+prick records/legacy-pt-2 Legacy Pt 2
 cassl items/waking-vigil Waking Vigil
-wider record/the-sundial The Sundial
+wider records/the-sundial The Sundial
 brawl entries/kings Kings
 veles cards/ghost-fragment-rasputin-6 Ghost Fragment: Rasputin 6
-strum record/legacy-pt-2 Legacy Pt 2
+strum records/legacy-pt-2 Legacy Pt 2
 bread entries/14-patron 14: Patron
 jewel cards/lord-radegast Lord Radegast
 fengs entries/nation-of-beasts Nation of Beasts
@@ -1478,8 +1478,8 @@ goeth items/helm-of-krolok Hood of Malok
 mated entries/on-the-hunt On the Hunt
 etono entries/solstice-mask-resplendent Solstice Mask (Resplendent)
 agape cards/ghost-fragment-the-golden-age-2 Ghost Fragment: The Golden Age 2
-whelp record/sisters Sisters
-terse record/glory-21 Glory 2.1
+whelp records/sisters Sisters
+terse records/glory-21 Glory 2.1
 squat entries/4-the-assailant 4. THE ASSAILANT
 ingot entries/fikrul Fikrul
 grain entries/volitive Volitive
@@ -1512,7 +1512,7 @@ swing cards/black-spindle Black Spindle
 waist entries/holdfast-mark Holdfast Mark
 drake items/drake-tribute Drake Tribute
 greek entries/reactchooseact react|choose|act
-finch record/the-murder-of-cayde-6 The Murder of Cayde-6
+finch records/the-murder-of-cayde-6 The Murder of Cayde-6
 anwar entries/pressure Pressure
 crawl entries/entry-v Entry V
 nasya entries/the-witch The Witch
@@ -1526,14 +1526,14 @@ taint cards/urn-of-sacrifice Urn of Sacrifice
 slimy entries/holdfast-cloak Holdfast Cloak
 lunge items/biotic-enhancements Biotic Enhancements
 clang entries/solstice-plate-resplendent Solstice Plate (Resplendent)
-biome record/legacy-pt-2 Legacy Pt 2
+biome records/legacy-pt-2 Legacy Pt 2
 barat entries/the-sixth-seal-part-ii The Sixth Seal, Part II
 aglow entries/dawnblade Dawnblade
 prost items/prost-fr2 Prost FR2
 fairy entries/python Python
 opcom entries/10-war-stories 10: War Stories
 annoy entries/ego-and-squid Ego and Squid
-pearl record/legacy-pt-2 Legacy Pt 2
+pearl records/legacy-pt-2 Legacy Pt 2
 swirl entries/vance-passeri Vance: Passeri
 eject entries/the-length-of-a-chain-part-i The Length of a Chain | Part I
 lease entries/lease Lease
@@ -1543,7 +1543,7 @@ lekan items/red-moon-phantom-vest Red Moon Phantom Vest
 virgo cards/virgo-prohibition Virgo Prohibition
 bonny items/the-damned-lute The Damned Lute
 darnu items/take-the-wanted-5 Take the Wanted
-merge record/joining Joining
+merge records/joining Joining
 nomic entries/the-first-knife The First Knife
 wreak entries/regarding-nightmares Regarding Nightmares
 smith cards/ghost-fragment-thorn-2 Ghost Fragment: Thorn 2
@@ -1574,12 +1574,12 @@ fraud items/future-safe-10 Future Safe 10
 taeko entries/mirative Mirative
 lethe entries/thetis-brave Thetis Brave
 saucy cards/ghost-fragment-old-russia-3 Ghost Fragment: Old Russia 3
-servo record/legacy-pt-2 Legacy Pt 2
+servo records/legacy-pt-2 Legacy Pt 2
 wilco entries/regent Regent
-humid record/legacy-pt-2 Legacy Pt 2
+humid records/legacy-pt-2 Legacy Pt 2
 shalt entries/kings Kings
 oddly entries/regarding-omnigul-will-of-crota Regarding Omnigul, Will of Crota
-tense record/remembrance Remembrance
+tense records/remembrance Remembrance
 lagos entries/is-it-you Is it you?
 hades items/mark-of-the-royal Mark of the Royal
 stool entries/breakneck Breakneck
@@ -1588,7 +1588,7 @@ vivid cards/ghost-fragment-awoken-3 Ghost Fragment: Awoken 3
 wreck entries/regent Regent
 upped cards/draksis-winter-kell Draksis, Winter Kell
 lasso entries/home-pt-iv Home, pt. IV
-sized record/legacy Legacy
+sized records/legacy Legacy
 tacit cards/ghost-fragment-old-russia-3 Ghost Fragment: Old Russia 3
 parry items/eternitys-edge Eternity's Edge
 stair cards/the-silent-fang The Silent Fang
@@ -1597,7 +1597,7 @@ chess entries/imponent-v Imponent V
 snipe items/edz-treasure-map-8 EDZ Treasure Map
 reedy entries/civilian-atrium-south Civilian Atrium South
 excel items/winter-blade Winter Blade
-yaris record/fortitude-31 Fortitude 3.1
+yaris records/fortitude-31 Fortitude 3.1
 medic entries/truth Truth
 aback entries/last-day Last Day
 flail entries/xi-the-anti-logic XI: The Anti-Logic
@@ -1613,7 +1613,7 @@ spade entries/home-pt-iv Home, pt. IV
 parse entries/hollow-words Hollow Words
 uncle entries/injection Injection
 lofty entries/holdfast-mark Holdfast Mark
-divan record/am-i-to-cast-a-shadow "Am I to cast a Shadow?"
+divan records/am-i-to-cast-a-shadow "Am I to cast a Shadow?"
 fyodr entries/is-it-you Is it you?
 niche entries/asudem asudeM
 atlas cards/sector-618 Sector 618
@@ -1621,7 +1621,7 @@ roils entries/revanche-ii Revanche II
 tover cards/rezyl-azzir-war-without-end Rezyl Azzir - War Without End
 tumor entries/p53 p53
 sabot items/gozen-c Gozen-C
-beset record/false-idols False Idols
+beset records/false-idols False Idols
 korus cards/fleetbase-korus-phobos Fleetbase Korus, Phobos
 misty entries/tyrannocide-i Tyrannocide I
 dante entries/the-water-sun-part-i The Water Sun, Part I
@@ -1659,14 +1659,14 @@ kanmu entries/solstice-hood-resplendent Solstice Hood (Resplendent)
 erode entries/reverie-dawn-gloves Reverie Dawn Gloves
 wonky entries/entry-25 Entry 25
 giddy entries/is-it-you Is it you?
-wiser record/maintenance-operations-log-30037 Maintenance Operations Log 30037
+wiser records/maintenance-operations-log-30037 Maintenance Operations Log 30037
 guren entries/ghost-fragment-tolands-ghost Ghost Fragment: Toland's Ghost
 ipads items/bungie-foundation-shell Bungie Foundation Shell
 hadal cards/ghost-fragment-darkness Ghost Fragment: Darkness
 juice items/nessus-treasure-map-8 Nessus Treasure Map
 modal entries/ghost-fragment-gimble-4s-ghost Ghost Fragment: Gimble-4's Ghost
 rouse items/lion-rampant-2 Lion Rampant
-ennui record/dust Dust
+ennui records/dust Dust
 hassa cards/rezyl-azzir-war-without-end Rezyl Azzir - War Without End
 geode entries/cosmogyre-iii Cosmogyre III
 rebar entries/pulled-pork Pulled Pork
@@ -1678,9 +1678,9 @@ trend entries/noetic-effects Noetic Effects
 swoon items/the-smolder The Smolder
 plumb entries/is-it-you Is it you?
 grind cards/ghost-fragment-cabal-3 Ghost Fragment: Cabal 3
-sieve record/legacy-pt-2 Legacy Pt 2
-peasy record/fortitude-31 Fortitude 3.1
-pylon record/the-sundial The Sundial
+sieve records/legacy-pt-2 Legacy Pt 2
+peasy records/fortitude-31 Fortitude 3.1
+pylon records/the-sundial The Sundial
 squid entries/ego-and-squid Ego and Squid
 valid items/expired-ramen-coupon Expired Ramen Coupon
 hitch entries/cosmogyre-ii Cosmogyre II
@@ -1714,9 +1714,9 @@ query cards/ghost-fragment-rasputin-6 Ghost Fragment: Rasputin 6
 lidar entries/the-leviathan The Leviathan
 nomad items/s-22-nomad S-22 Nomad
 audit items/field-maintenance Field Maintenance
-tempo record/what-gives-me-pause What Gives Me Pause
-gunna record/legacy-pt-2 Legacy Pt 2
-surer record/endure Endure
+tempo records/what-gives-me-pause What Gives Me Pause
+gunna records/legacy-pt-2 Legacy Pt 2
+surer records/endure Endure
 giver entries/a-note-of-warning A Note of Warning
 nicer entries/entries-142-143-144 Entries 142, 143, 144
 aging entries/6-foundations-part-i 6: Foundations Part I
@@ -1731,7 +1731,7 @@ poked entries/some-kind-of-luck Some Kind of Luck
 alzok cards/alzok-dal-gornuk-dal-zyrok-dal Alzok Däl, Gornuk Däl, Zyrok Däl
 basho entries/pilgrimage Pilgrimage
 lomar cards/beauty-in-destruction Beauty in Destruction
-amtec record/joining Joining
+amtec records/joining Joining
 pinar cards/wanted-grayor-wolf-assassin WANTED: Grayor, Wolf Assassin
 allah entries/the-water-sun-part-i The Water Sun, Part I
 twine entries/the-leviathan The Leviathan
@@ -1739,7 +1739,7 @@ jaded entries/contrast CONTRAST
 cairn cards/oryx-rebuked Oryx: Rebuked
 achoo items/graceful-sneeze-2 Graceful Sneeze
 trunk entries/risen Risen
-mosey record/letter-from-cayde Letter from Cayde
+mosey records/letter-from-cayde Letter from Cayde
 gauze cards/ghost-fragment-eris-morn Ghost Fragment: Eris Morn
 laced cards/ghost-fragment-awoken Ghost Fragment: Awoken
 merok items/target-merok-eir-prince TARGET: Merok, Eir Prince
@@ -1757,7 +1757,7 @@ gaffe cards/ghost-fragment-human-2 Ghost Fragment: Human 2
 sunny items/jubilant-shell Jubilant Shell
 fudgy entries/call Call
 orion entries/shards-of-galanor Shards of Galanor
-tunic record/the-accolade The Accolade
+tunic records/the-accolade The Accolade
 filmy entries/heaven-or-hell Heaven or Hell
 gwern entries/leviathans-breath Leviathan's Breath
 ident entries/cosmogyre-i Cosmogyre I
@@ -1785,7 +1785,7 @@ moluk items/moluk-wormwaker-2 Moluk, Wormwaker
 swath items/lacustrine-mg4 Lacustrine-MG4
 canal entries/cerulean-flash Cerulean Flash
 afoul entries/chords-of-meaning Chords of Meaning
-susan record/magnificence-20 Magnificence 2.0
+susan records/magnificence-20 Magnificence 2.0
 jolly items/the-button The Button
 sired entries/ixxii-apocrypha IX.X.II: Apocrypha
 onset cards/viii-leviathan VIII: Leviathan
@@ -1797,7 +1797,7 @@ sheaf entries/tradition-is-bigger-than-you Tradition Is Bigger Than You
 slump entries/actium-war-rig Actium War Rig
 silky items/moonfang-x7-gloves Moonfang-X7 Gloves
 solis entries/truth-tinkered Truth Tinkered
-plink record/legacy Legacy
+plink records/legacy Legacy
 hasan entries/glad-tidings Glad Tidings
 nethe entries/solstice-robes-resplendent Solstice Robes (Resplendent)
 ivola entries/solstice-gloves-resplendent Solstice Gloves (Resplendent)
@@ -1820,13 +1820,13 @@ bowel entries/pleased-to-meet-you Pleased to Meet You
 lhasa cards/ghost-fragment-vex-5 Ghost Fragment: Vex 5
 snail entries/asher-prediction Asher: Prediction
 lunks items/legion-bane-10 Legion-Bane
-bigge record/maintenance-operations-log-30037 Maintenance Operations Log 30037
+bigge records/maintenance-operations-log-30037 Maintenance Operations Log 30037
 adleg items/sealing-the-blade-3 Sealing the Blade
 hamit entries/the-wardcliff-coil The Wardcliff Coil
-zilch record/legacy-pt-2 Legacy Pt 2
+zilch records/legacy-pt-2 Legacy Pt 2
 vogue entries/travelers-judgment-5 Traveler's Judgment 5
 wryly entries/sails-of-osiris Sails of Osiris
-sable record/legacy-pt-2 Legacy Pt 2
+sable records/legacy-pt-2 Legacy Pt 2
 trenn cards/ghost-fragment-the-last-word-3 Ghost Fragment: The Last Word 3
 depot entries/solstice-strides-resplendent Solstice Strides (Resplendent)
 paced entries/palingenesis-iii Palingenesis III
@@ -1842,7 +1842,7 @@ bassa entries/riddled-with-lies Riddled with Lies
 tinny cards/mystery-praedyths-door Mystery: Praedyth's Door
 psara entries/kings-wrath King's Wrath
 kolar items/arc-flayer-mantle Arc Flayer Mantle
-lucus record/legacy Legacy
+lucus records/legacy Legacy
 grill entries/6-foundations-part-i 6: Foundations Part I
 anima entries/antaeus-wards Antaeus Wards
 nobis items/manus-celer-dei Manus Celer Dei
@@ -1878,7 +1878,7 @@ awash cards/legend-rezyl-azzir-the-triumphant-fall Legend: Rezyl Azzir - The Tri
 waned entries/imponent-i Imponent I
 dated items/sturm Sturm
 ultra items/three-of-coins Three of Coins
-stows record/legacy Legacy
+stows records/legacy Legacy
 wedge cards/ghost-fragment-the-last-word-3 Ghost Fragment: The Last Word 3
 baggy entries/flayed Flayed
 whiny entries/reacquaintance Reacquaintance
@@ -1904,7 +1904,7 @@ dryer entries/after-the-heart-part-ii After the Heart | Part II
 sober entries/bamberga Bamberga
 roped entries/fold Fold
 norse items/rasmussen-tribute Rasmussen Tribute
-clomp record/legacy-pt-2 Legacy Pt 2
+clomp records/legacy-pt-2 Legacy Pt 2
 gooey entries/ancient-apocalypse-robes Ancient Apocalypse Robes
 dingy entries/savin-2 Savin
 nonny items/the-damned-lute The Damned Lute
@@ -1912,7 +1912,7 @@ slyly entries/fighting-lion Fighting Lion
 jimmy entries/all-in All-In
 theta cards/ghost-fragment-fallen-6 Ghost Fragment: Fallen 6
 whale entries/shadows-mark Shadow's Mark
-abeam record/what-gives-me-pause What Gives Me Pause
+abeam records/what-gives-me-pause What Gives Me Pause
 grimy entries/queenslaw Queenslaw
 hiked entries/asher-prediction Asher: Prediction
 lurid entries/imponent-i Imponent I
@@ -1922,7 +1922,7 @@ yavek cards/yavek-wolf-baron Yavek, Wolf Baron
 fussy entries/resurrecting-flight Resurrecting Flight
 eying entries/vespulaser Vespulaser
 steak entries/potential Potential
-unlit record/legacy Legacy
+unlit records/legacy Legacy
 whets entries/tyrannocide-i Tyrannocide I
 cocoa entries/braytech-absolute-zero-mark BrayTech Absolute Zero Mark
 klick entries/regent Regent
@@ -1934,6 +1934,6 @@ skimp entries/tomorrows-answer Tomorrow's Answer
 cagey entries/artifacts-and-old-friends Artifacts and Old Friends
 tomas entries/dawning-cheer Dawning Cheer
 agita entries/zephyr Zephyr
-jaunt record/mementos-from-the-wild-2620832878 Mementos from the Wild (2620832878)
+jaunt records/mementos-from-the-wild-2620832878 Mementos from the Wild (2620832878)
 cesar entries/sails-of-osiris Sails of Osiris
 sorta entries/solstice-grasps-rekindled Solstice Grasps (Rekindled)
