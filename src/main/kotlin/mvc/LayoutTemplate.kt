@@ -17,6 +17,7 @@ class LayoutTemplate : Template<HTML> {
     val content = Placeholder<FlowContent>()
 
     override fun HTML.apply() {
+        comment("https://github.com/yttrian/wormdle")
         head {
             // Required meta tags
             meta(charset = "utf-8")
@@ -25,7 +26,7 @@ class LayoutTemplate : Template<HTML> {
             comment("Turbo makes things smoother, but is not necessary, keeping with the goal of no-JS required.")
             script(src = "/webjars/hotwired__turbo/turbo.es2017-esm.js") { type = "module" }
             // Social Media
-            val description = "Guess the hidden lore in 6 tries. A new puzzle is available daily, for now."
+            val description = "Guess the hidden lore in 6 tries. A new puzzle is available daily at reset, for now."
             meta("description", description)
             meta("og:title", "Wormdle - A daily Destiny lordle wordle")
             meta("og:type", "website")

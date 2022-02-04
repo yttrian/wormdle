@@ -9,8 +9,8 @@ Why not try implementing the same game, but with HTML forms, scary CSS, and a se
 for because it's not just static files. But of course you're joking, and would've been fine using JavaScript and just
 wanted to see if you could make a virtual keyboard with CSS alone. (Sorry real keyboard users.)
 
-Also, you just happen to be a fan of Destiny lore, and want to prove yourself after The Event that left you traumatized
-and with permanent trust issues.
+Also, you just happen to be a fan of Destiny lore ~~and want to prove yourself after The Event that left you traumatized
+and with permanent trust issues~~.
 
 ## How did you make the word list?
 
