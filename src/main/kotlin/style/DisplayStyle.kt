@@ -7,17 +7,20 @@ import kotlinx.css.Display
 import kotlinx.css.GridTemplateColumns
 import kotlinx.css.JustifyContent
 import kotlinx.css.TextTransform
+import kotlinx.css.alignContent
 import kotlinx.css.alignItems
 import kotlinx.css.backgroundColor
 import kotlinx.css.border
 import kotlinx.css.borderColor
 import kotlinx.css.color
 import kotlinx.css.display
+import kotlinx.css.flex
 import kotlinx.css.fontSize
 import kotlinx.css.gridTemplateColumns
 import kotlinx.css.height
 import kotlinx.css.justifyContent
 import kotlinx.css.margin
+import kotlinx.css.pct
 import kotlinx.css.rem
 import kotlinx.css.textTransform
 import kotlinx.css.width
@@ -28,7 +31,9 @@ object DisplayStyle : Style {
     override fun CssBuilder.apply() {
         ".display" {
             display = Display.grid
+            flex(1.0, 1.0, 0.pct)
             justifyContent = JustifyContent.center
+            alignContent = Align.center
         }
 
         ".letters" {
