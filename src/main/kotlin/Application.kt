@@ -39,7 +39,7 @@ fun Application.module() {
         route("/", GameController)
 
         // https://ktor.io/docs/css-dsl.html#use_css
-        get("/wordle.css") {
+        get("/wormdle.css") {
             with(WormdleStyle) {
                 context.respondText(CssBuilder().apply { apply() }.toString(), ContentType.Text.CSS)
             }

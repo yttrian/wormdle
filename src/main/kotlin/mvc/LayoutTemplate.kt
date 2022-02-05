@@ -33,7 +33,7 @@ class LayoutTemplate : Template<HTML> {
             meta("og:description", description)
             meta("theme-color", Marker.Here.color.value)
             // Custom CSS
-            link("/wordle.css", "stylesheet")
+            link("/wormdle.css", "stylesheet")
             title("Wormdle")
         }
         body {
