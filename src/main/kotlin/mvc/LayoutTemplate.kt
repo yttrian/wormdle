@@ -7,6 +7,7 @@ import kotlinx.html.FlowContent
 import kotlinx.html.HTML
 import kotlinx.html.body
 import kotlinx.html.head
+import kotlinx.html.lang
 import kotlinx.html.link
 import kotlinx.html.meta
 import kotlinx.html.script
@@ -19,6 +20,7 @@ class LayoutTemplate : Template<HTML> {
     override fun HTML.apply() {
         comment("https://github.com/yttrian/wormdle")
         head {
+            lang = "en"
             // Required meta tags
             meta(charset = "utf-8")
             meta("viewport", "width=device-width, initial-scale=1, user-scalable=no")
