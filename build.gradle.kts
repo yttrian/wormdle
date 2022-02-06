@@ -30,6 +30,9 @@ dependencies {
     implementation("io.ktor:ktor-server-sessions:$ktorVersion")
     implementation("io.ktor:ktor-html-builder:$ktorVersion")
     implementation("org.jetbrains.kotlin-wrappers:kotlin-css:1.0.0-pre.291-kotlin-1.6.10")
+    // Ktor client
+    implementation("io.ktor:ktor-client-core:$ktorVersion")
+    implementation("io.ktor:ktor-client-cio:$ktorVersion")
     // Webjars
     implementation("io.ktor:ktor-webjars:$ktorVersion")
     implementation("org.webjars.npm:hotwired__turbo:7.1.0")
