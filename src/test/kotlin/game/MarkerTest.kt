@@ -1,6 +1,5 @@
-package game
+package org.yttr.lordle.game
 
-import org.yttr.lordle.game.Marker
 import kotlin.test.Test
 import kotlin.test.assertContentEquals
 

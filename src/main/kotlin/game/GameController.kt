@@ -16,32 +16,20 @@ import io.ktor.sessions.sessions
 import io.ktor.sessions.set
 import org.yttr.lordle.WormdleSession
 import org.yttr.lordle.mvc.Controller
+import org.yttr.lordle.words.Words
 import java.time.LocalDate
 import java.time.ZoneId
 import java.time.ZonedDateTime
 import java.time.temporal.ChronoUnit
-import kotlin.random.Random
 
 object GameController : Controller<GameModel>(GameView) {
     const val WORD_LENGTH: Int = 5
     const val MAX_ATTEMPTS: Int = 6
-    private const val WORD_LIST_SPLITS = 3
     private const val DAILY_RESET = 9
 
-    private val config = ConfigFactory.load()
+    private val config = ConfigFactory.load().getConfig("lordle")
     private val timezone = ZoneId.of("America/Los_Angeles")
-    private val epoch = LocalDate.parse(config.getString("lordle.epoch")).atTime(DAILY_RESET, 0).atZone(timezone)
-    private val sources by lazy {
-        val lines = javaClass.classLoader.getResource("words.txt")?.readText()?.lines()
-        lines?.filter { it.isNotBlank() }?.associate {
-            val (word, slug, name) = it.split(" ", limit = WORD_LIST_SPLITS)
-            word to (slug to name)
-        } ?: emptyMap()
-    }
-    private val words by lazy {
-        val random = Random(config.getInt("lordle.seed"))
-        sources.keys.shuffled(random)
-    }
+    private val epoch = LocalDate.parse(config.getString("epoch")).atTime(DAILY_RESET, 0).atZone(timezone)
 
     private var ApplicationCall.lordleSession: WormdleSession
         get() {
@@ -55,10 +43,13 @@ object GameController : Controller<GameModel>(GameView) {
     override fun Route.routes() {
         get {
             val session = context.lordleSession
-            val word = words.getOrNull(session.day)
+            val word = Words.forDay(session.day)
+
+            // Attempt to warm the dictionary ahead of POST
+            Words.warm()
 
             if (word != null) {
-                val (slug, name) = sources.getValue(word)
+                val (slug, name) = Words.source(word)
                 context.respondView(GameModel(word, slug, name, session))
             } else {
                 context.respondText("No more words!")
@@ -75,14 +66,14 @@ object GameController : Controller<GameModel>(GameView) {
 
             if (session.guesses.size <= MAX_ATTEMPTS && entry.all { it in 'a'..'z' }) {
                 context.lordleSession = when {
-                    entry == words.getOrNull(session.day) -> WormdleSession(
+                    entry == Words.forDay(session.day) -> WormdleSession(
                         session.day,
                         session.guesses + entry,
                         entry,
                         "You got it!"
                     )
-                    words.contains(entry) -> WormdleSession(session.day, session.guesses + entry)
-                    else -> WormdleSession(session.day, session.guesses, entry, "Not in word list")
+                    Words.inDictionary(entry) -> WormdleSession(session.day, session.guesses + entry)
+                    else -> WormdleSession(session.day, session.guesses, entry, "Not in dictionary")
                 }
             }
 
