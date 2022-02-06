@@ -26,7 +26,7 @@ class LayoutTemplate(request: RequestConnectionPoint) : Template<HTML> {
             comment("Required meta tags")
             meta(charset = "utf-8")
             meta("viewport", "width=device-width, initial-scale=1, user-scalable=no")
-            val description = "Guess the hidden lore in 6 tries. A new puzzle is available daily at reset, for now."
+            val description = "Guess the hidden lore in 6 tries. A new puzzle is available daily at 9 AM Pacific reset."
             meta("description", description)
             comment("Turbo! Makes things smoother, but is not necessary, keeping with the goal of no-JS required.")
             script(src = "/webjars/hotwired__turbo/turbo.es2017-esm.js") { type = "module" }
@@ -41,6 +41,7 @@ class LayoutTemplate(request: RequestConnectionPoint) : Template<HTML> {
             meta("theme-color", ModalStyle.wormGreen.value)
             comment("Styles")
             link("/wormdle.css", "stylesheet")
+            link("/images/worm_favicon.png", "icon shortcut", "image/png")
             title("Wormdle")
         }
         body {

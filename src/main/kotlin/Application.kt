@@ -15,7 +15,6 @@ import io.ktor.http.CacheControl
 import io.ktor.http.ContentType
 import io.ktor.http.CookieEncoding
 import io.ktor.http.content.CachingOptions
-import io.ktor.http.content.resource
 import io.ktor.http.content.resources
 import io.ktor.http.content.static
 import io.ktor.response.respondText
@@ -72,6 +71,7 @@ fun Application.module() {
                 "default-src 'none'",
                 "style-src 'self' 'unsafe-inline'",
                 "script-src 'self'",
+                "img-src 'self'",
                 "connect-src 'self'",
                 "frame-ancestors 'none'",
                 "base-uri 'self'",
@@ -104,7 +104,6 @@ fun Application.module() {
         }
 
         static {
-            resource("favicon.ico", "images/favicon.ico")
             route("images") {
                 resources("images")
             }
