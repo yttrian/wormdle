@@ -39,6 +39,10 @@ Tons!
 
 ## Attributions
 
+The Wormdle logo was generously created by [serindoodles](https://twitter.com/serindoodles).
+
+Wormdle is made possible by open source software:
+
 * [Kotlin](https://kotlinlang.org/)
 * [Ktor](https://github.com/ktorio/ktor)
 * [logback](https://github.com/qos-ch/logback)

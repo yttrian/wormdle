@@ -30,6 +30,8 @@ import kotlinx.css.textAlign
 import kotlinx.css.width
 
 object ModalStyle : Style {
+    val wormGreen = Color("#b3e174")
+
     override fun CssBuilder.apply() {
         ".modal" {
             display = Display.none
@@ -54,7 +56,7 @@ object ModalStyle : Style {
             padding = "2rem"
             resize = Resize.none
             color = Color.black
-            backgroundColor = Color("#b3e174")
+            backgroundColor = wormGreen
             borderStyle = BorderStyle.none
             borderRadius = .5.rem
         }
