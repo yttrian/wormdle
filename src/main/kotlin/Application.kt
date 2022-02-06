@@ -15,10 +15,11 @@ import io.ktor.http.CacheControl
 import io.ktor.http.ContentType
 import io.ktor.http.CookieEncoding
 import io.ktor.http.content.CachingOptions
-import io.ktor.http.content.resource
+import io.ktor.http.content.resources
 import io.ktor.http.content.static
 import io.ktor.response.respondText
 import io.ktor.routing.get
+import io.ktor.routing.route
 import io.ktor.routing.routing
 import io.ktor.sessions.Sessions
 import io.ktor.sessions.cookie
@@ -34,7 +35,7 @@ fun main(args: Array<String>): Unit = io.ktor.server.cio.EngineMain.main(args)
 private const val DAYS_IN_YEAR: Long = 365
 private val oneYear = Duration.ofDays(DAYS_IN_YEAR).toSeconds()
 
-@Suppress("unused")
+@Suppress("unused", "LongMethod")
 fun Application.module() {
     install(AutoHeadResponse)
 
@@ -56,8 +57,9 @@ fun Application.module() {
         }
     }
 
+    install(XForwardedHeaderSupport)
+
     if (!developmentMode) {
-        install(XForwardedHeaderSupport)
         install(HttpsRedirect)
         install(HSTS)
     }
@@ -69,6 +71,7 @@ fun Application.module() {
                 "default-src 'none'",
                 "style-src 'self' 'unsafe-inline'",
                 "script-src 'self'",
+                "img-src 'self'",
                 "connect-src 'self'",
                 "frame-ancestors 'none'",
                 "base-uri 'self'",
@@ -101,7 +104,9 @@ fun Application.module() {
         }
 
         static {
-            resource("favicon.ico")
+            route("images") {
+                resources("images")
+            }
         }
     }
 }

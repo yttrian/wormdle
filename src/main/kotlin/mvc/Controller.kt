@@ -1,6 +1,7 @@
 package org.yttr.lordle.mvc
 
 import io.ktor.application.ApplicationCall
+import io.ktor.features.origin
 import io.ktor.html.respondHtmlTemplate
 import io.ktor.routing.Route
 import io.ktor.routing.createRouteFromPath
@@ -11,7 +12,7 @@ abstract class Controller<in M>(private val view: View<M>) {
 
     operator fun invoke(route: Route) = with(route) { routes() }
 
-    suspend fun ApplicationCall.respondView(model: M) = this.respondHtmlTemplate(LayoutTemplate()) {
+    suspend fun ApplicationCall.respondView(model: M) = this.respondHtmlTemplate(LayoutTemplate(request.origin)) {
         with(view) { apply(model) }
     }
 }
