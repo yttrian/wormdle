@@ -35,7 +35,7 @@ class LayoutTemplate(request: RequestConnectionPoint) : Template<HTML> {
             meta("og:title", "Wormdle - A daily Destiny lordle wordle")
             meta("og:type", "website")
             meta("og:description", description)
-            meta("og:image", "$baseUrl/images/serindoodles_wormdle_lr.png")
+            meta("og:image", "$baseUrl/images/serindoodles_wormdle.png")
             meta("og:image:alt", "The Wormdle logo created by @serindoodles")
             meta("twitter:card", "summary_large_image")
             meta("theme-color", ModalStyle.wormGreen.value)
