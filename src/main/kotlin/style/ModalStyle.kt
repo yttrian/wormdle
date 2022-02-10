@@ -33,7 +33,9 @@ import kotlinx.css.pct
 import kotlinx.css.position
 import kotlinx.css.rem
 import kotlinx.css.resize
+import kotlinx.css.right
 import kotlinx.css.textAlign
+import kotlinx.css.top
 import kotlinx.css.width
 
 object ModalStyle : Style() {
@@ -52,6 +54,13 @@ object ModalStyle : Style() {
             flexDirection = FlexDirection.column
             backgroundColor = Color.black.withAlpha(BACKGROUND_ALPHA)
             put("backdrop-filter", "blur(.2rem)")
+        }
+
+        ".modal:before" {
+            content = QuotedString("×")
+            position = Position.fixed
+            top = 1.rem
+            right = 1.rem
         }
 
         ".modal:after" {
