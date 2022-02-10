@@ -10,7 +10,7 @@ import kotlinx.css.display
 import kotlinx.css.textAlign
 import org.yttr.lordle.game.Marker
 
-object NotesStyle : Style {
+object NotesStyle : Style() {
     override fun CssBuilder.apply() {
         ".notes" {
             display = Display.flex

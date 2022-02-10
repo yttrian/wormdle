@@ -7,7 +7,7 @@ import kotlinx.css.header
 import kotlinx.css.margin
 import kotlinx.css.textAlign
 
-object HeaderStyle : Style {
+object HeaderStyle : Style() {
     override fun CssBuilder.apply() {
         header {
             textAlign = TextAlign.center

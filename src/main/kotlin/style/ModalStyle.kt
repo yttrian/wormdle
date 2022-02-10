@@ -29,7 +29,7 @@ import kotlinx.css.resize
 import kotlinx.css.textAlign
 import kotlinx.css.width
 
-object ModalStyle : Style {
+object ModalStyle : Style() {
     val wormGreen = Color("#b3e174")
 
     override fun CssBuilder.apply() {
