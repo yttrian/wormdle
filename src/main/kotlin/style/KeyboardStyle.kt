@@ -33,7 +33,7 @@ import kotlinx.css.width
 import org.yttr.lordle.game.GameController
 import org.yttr.lordle.game.Marker
 
-object KeyboardStyle : Style {
+object KeyboardStyle : Style() {
     override fun CssBuilder.apply() {
         ".keyboard" {
             userSelect = UserSelect.none

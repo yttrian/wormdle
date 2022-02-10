@@ -21,7 +21,7 @@ import kotlinx.css.margin
 import kotlinx.css.padding
 import kotlinx.css.pct
 
-object WormdleStyle : Style {
+object WormdleStyle : Style() {
     private val defaultFonts = listOf(
         "-apple-system",
         "BlinkMacSystemFont",
@@ -32,6 +32,10 @@ object WormdleStyle : Style {
         "Apple Color Emoji",
         "Segoe UI Emoji"
     )
+
+    val filename by lazy {
+        "wormdle.$contentHash.css"
+    }
 
     override fun CssBuilder.apply() {
         html {

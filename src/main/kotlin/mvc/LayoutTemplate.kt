@@ -14,6 +14,7 @@ import kotlinx.html.meta
 import kotlinx.html.script
 import kotlinx.html.title
 import org.yttr.lordle.style.ModalStyle
+import org.yttr.lordle.style.WormdleStyle
 
 class LayoutTemplate(request: RequestConnectionPoint) : Template<HTML> {
     private val baseUrl = "https://${request.host}"
@@ -40,7 +41,7 @@ class LayoutTemplate(request: RequestConnectionPoint) : Template<HTML> {
             meta("twitter:card", "summary_large_image")
             meta("theme-color", ModalStyle.wormGreen.value)
             comment("Styles")
-            link("/wormdle.css", "stylesheet")
+            link("/${WormdleStyle.filename}", "stylesheet")
             link("/images/worm_favicon.png", "icon shortcut", "image/png")
             title("Wormdle")
         }

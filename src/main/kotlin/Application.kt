@@ -24,7 +24,6 @@ import io.ktor.routing.routing
 import io.ktor.sessions.Sessions
 import io.ktor.sessions.cookie
 import io.ktor.webjars.Webjars
-import kotlinx.css.CssBuilder
 import org.yttr.lordle.game.GameController
 import org.yttr.lordle.mvc.route
 import org.yttr.lordle.style.WormdleStyle
@@ -97,10 +96,8 @@ fun Application.module() {
         route("/", GameController)
 
         // https://ktor.io/docs/css-dsl.html#use_css
-        get("/wormdle.css") {
-            with(WormdleStyle) {
-                context.respondText(CssBuilder().apply { apply() }.toString(), ContentType.Text.CSS)
-            }
+        get("/${WormdleStyle.filename}") {
+            context.respondText(WormdleStyle.content, ContentType.Text.CSS)
         }
 
         static {

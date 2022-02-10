@@ -27,7 +27,7 @@ import kotlinx.css.width
 import org.yttr.lordle.game.GameController
 import org.yttr.lordle.game.Marker
 
-object DisplayStyle : Style {
+object DisplayStyle : Style() {
     override fun CssBuilder.apply() {
         ".display" {
             display = Display.grid
