@@ -3,8 +3,7 @@ package org.yttr.lordle.style
 import kotlinx.css.CssBuilder
 import java.math.BigInteger
 import java.security.MessageDigest
-import java.util.Base64
-import java.util.Locale
+import java.util.*
 
 abstract class Style {
     abstract fun CssBuilder.apply()

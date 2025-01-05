@@ -1,21 +1,6 @@
 package org.yttr.lordle.game
 
-import kotlinx.html.FlowContent
-import kotlinx.html.FormMethod
-import kotlinx.html.InputType
-import kotlinx.html.a
-import kotlinx.html.br
-import kotlinx.html.button
-import kotlinx.html.div
-import kotlinx.html.form
-import kotlinx.html.h1
-import kotlinx.html.header
-import kotlinx.html.id
-import kotlinx.html.input
-import kotlinx.html.label
-import kotlinx.html.small
-import kotlinx.html.span
-import kotlinx.html.textArea
+import kotlinx.html.*
 import org.yttr.lordle.mvc.LayoutTemplate
 import org.yttr.lordle.mvc.View
 

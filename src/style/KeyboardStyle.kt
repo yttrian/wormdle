@@ -1,35 +1,6 @@
 package org.yttr.lordle.style
 
-import kotlinx.css.Align
-import kotlinx.css.Color
-import kotlinx.css.CssBuilder
-import kotlinx.css.Cursor
-import kotlinx.css.Display
-import kotlinx.css.FlexDirection
-import kotlinx.css.JustifyContent
-import kotlinx.css.TextAlign
-import kotlinx.css.TextTransform
-import kotlinx.css.UserSelect
-import kotlinx.css.alignItems
-import kotlinx.css.backgroundColor
-import kotlinx.css.border
-import kotlinx.css.borderRadius
-import kotlinx.css.color
-import kotlinx.css.cursor
-import kotlinx.css.display
-import kotlinx.css.flex
-import kotlinx.css.flexDirection
-import kotlinx.css.gap
-import kotlinx.css.height
-import kotlinx.css.justifyContent
-import kotlinx.css.margin
-import kotlinx.css.maxWidth
-import kotlinx.css.pct
-import kotlinx.css.rem
-import kotlinx.css.textAlign
-import kotlinx.css.textTransform
-import kotlinx.css.userSelect
-import kotlinx.css.width
+import kotlinx.css.*
 import org.yttr.lordle.game.GameController
 import org.yttr.lordle.game.Marker
 

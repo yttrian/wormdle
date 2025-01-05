@@ -1,18 +1,8 @@
 package org.yttr.lordle.mvc
 
-import io.ktor.html.Placeholder
-import io.ktor.html.Template
-import io.ktor.html.insert
-import io.ktor.http.RequestConnectionPoint
-import kotlinx.html.FlowContent
-import kotlinx.html.HTML
-import kotlinx.html.body
-import kotlinx.html.head
-import kotlinx.html.lang
-import kotlinx.html.link
-import kotlinx.html.meta
-import kotlinx.html.script
-import kotlinx.html.title
+import io.ktor.html.*
+import io.ktor.http.*
+import kotlinx.html.*
 import org.yttr.lordle.style.ModalStyle
 import org.yttr.lordle.style.WormdleStyle
 

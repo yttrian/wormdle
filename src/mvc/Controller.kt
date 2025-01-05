@@ -1,10 +1,9 @@
 package org.yttr.lordle.mvc
 
-import io.ktor.application.ApplicationCall
-import io.ktor.features.origin
-import io.ktor.html.respondHtmlTemplate
-import io.ktor.routing.Route
-import io.ktor.routing.createRouteFromPath
+import io.ktor.application.*
+import io.ktor.features.*
+import io.ktor.html.*
+import io.ktor.routing.*
 
 // https://github.com/yttrian/ktor-mvc/blob/master/src/web/mvc/Controller.kt
 abstract class Controller<in M>(private val view: View<M>) {

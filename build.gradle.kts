@@ -1,10 +1,6 @@
 plugins {
     application
-    kotlin("jvm") version "1.6.10"
 }
-
-group = "org.yttr"
-version = "0.0.1"
 
 application {
     mainClass.set("io.ktor.server.cio.EngineMain")

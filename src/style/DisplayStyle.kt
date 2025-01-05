@@ -1,29 +1,6 @@
 package org.yttr.lordle.style
 
-import kotlinx.css.Align
-import kotlinx.css.Color
-import kotlinx.css.CssBuilder
-import kotlinx.css.Display
-import kotlinx.css.GridTemplateColumns
-import kotlinx.css.JustifyContent
-import kotlinx.css.TextTransform
-import kotlinx.css.alignContent
-import kotlinx.css.alignItems
-import kotlinx.css.backgroundColor
-import kotlinx.css.border
-import kotlinx.css.borderColor
-import kotlinx.css.color
-import kotlinx.css.display
-import kotlinx.css.flex
-import kotlinx.css.fontSize
-import kotlinx.css.gridTemplateColumns
-import kotlinx.css.height
-import kotlinx.css.justifyContent
-import kotlinx.css.margin
-import kotlinx.css.pct
-import kotlinx.css.rem
-import kotlinx.css.textTransform
-import kotlinx.css.width
+import kotlinx.css.*
 import org.yttr.lordle.game.GameController
 import org.yttr.lordle.game.Marker
 

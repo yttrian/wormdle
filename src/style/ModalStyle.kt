@@ -1,42 +1,6 @@
 package org.yttr.lordle.style
 
-import kotlinx.css.Align
-import kotlinx.css.BorderStyle
-import kotlinx.css.Color
-import kotlinx.css.CssBuilder
-import kotlinx.css.Display
-import kotlinx.css.FlexDirection
-import kotlinx.css.FontStyle
-import kotlinx.css.FontWeight
-import kotlinx.css.JustifyContent
-import kotlinx.css.Position
-import kotlinx.css.QuotedString
-import kotlinx.css.Resize
-import kotlinx.css.TextAlign
-import kotlinx.css.alignItems
-import kotlinx.css.backgroundColor
-import kotlinx.css.borderRadius
-import kotlinx.css.borderStyle
-import kotlinx.css.color
-import kotlinx.css.content
-import kotlinx.css.display
-import kotlinx.css.flexDirection
-import kotlinx.css.fontFamily
-import kotlinx.css.fontSize
-import kotlinx.css.fontStyle
-import kotlinx.css.fontWeight
-import kotlinx.css.height
-import kotlinx.css.justifyContent
-import kotlinx.css.marginTop
-import kotlinx.css.padding
-import kotlinx.css.pct
-import kotlinx.css.position
-import kotlinx.css.rem
-import kotlinx.css.resize
-import kotlinx.css.right
-import kotlinx.css.textAlign
-import kotlinx.css.top
-import kotlinx.css.width
+import kotlinx.css.*
 
 object ModalStyle : Style() {
     private const val BACKGROUND_ALPHA: Double = 0.5

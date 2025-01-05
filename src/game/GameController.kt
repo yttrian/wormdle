@@ -1,19 +1,12 @@
 package org.yttr.lordle.game
 
 import com.typesafe.config.ConfigFactory
-import io.ktor.application.ApplicationCall
-import io.ktor.http.HttpHeaders
-import io.ktor.http.HttpStatusCode
-import io.ktor.request.receiveParameters
-import io.ktor.request.uri
-import io.ktor.response.respond
-import io.ktor.response.respondText
-import io.ktor.routing.Route
-import io.ktor.routing.get
-import io.ktor.routing.post
-import io.ktor.sessions.get
-import io.ktor.sessions.sessions
-import io.ktor.sessions.set
+import io.ktor.application.*
+import io.ktor.http.*
+import io.ktor.request.*
+import io.ktor.response.*
+import io.ktor.routing.*
+import io.ktor.sessions.*
 import org.yttr.lordle.WormdleSession
 import org.yttr.lordle.mvc.Controller
 import org.yttr.lordle.words.Words

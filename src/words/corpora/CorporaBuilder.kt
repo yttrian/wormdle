@@ -1,8 +1,8 @@
 package org.yttr.lordle.words.corpora
 
-import io.ktor.client.HttpClient
-import io.ktor.client.request.get
-import io.ktor.client.statement.HttpStatement
+import io.ktor.client.*
+import io.ktor.client.request.*
+import io.ktor.client.statement.*
 import org.slf4j.LoggerFactory
 import java.io.File
 import java.util.zip.ZipFile

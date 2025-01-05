@@ -1,25 +1,6 @@
 package org.yttr.lordle.style
 
-import kotlinx.css.Align
-import kotlinx.css.Color
-import kotlinx.css.CssBuilder
-import kotlinx.css.Display
-import kotlinx.css.FlexDirection
-import kotlinx.css.alignItems
-import kotlinx.css.backgroundColor
-import kotlinx.css.body
-import kotlinx.css.color
-import kotlinx.css.display
-import kotlinx.css.flex
-import kotlinx.css.flexDirection
-import kotlinx.css.fontFamily
-import kotlinx.css.form
-import kotlinx.css.height
-import kotlinx.css.html
-import kotlinx.css.input
-import kotlinx.css.margin
-import kotlinx.css.padding
-import kotlinx.css.pct
+import kotlinx.css.*
 
 object WormdleStyle : Style() {
     private val defaultFonts = listOf(

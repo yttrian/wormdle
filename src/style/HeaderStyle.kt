@@ -1,11 +1,6 @@
 package org.yttr.lordle.style
 
-import kotlinx.css.CssBuilder
-import kotlinx.css.TextAlign
-import kotlinx.css.h1
-import kotlinx.css.header
-import kotlinx.css.margin
-import kotlinx.css.textAlign
+import kotlinx.css.*
 
 object HeaderStyle : Style() {
     override fun CssBuilder.apply() {

@@ -1,13 +1,6 @@
 package org.yttr.lordle.style
 
-import kotlinx.css.Align
-import kotlinx.css.CssBuilder
-import kotlinx.css.Display
-import kotlinx.css.TextAlign
-import kotlinx.css.alignItems
-import kotlinx.css.color
-import kotlinx.css.display
-import kotlinx.css.textAlign
+import kotlinx.css.*
 import org.yttr.lordle.game.Marker
 
 object NotesStyle : Style() {
