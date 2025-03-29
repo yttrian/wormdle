@@ -1,7 +1,7 @@
-package org.yttr.lordle.style
+package org.yttr.wormdle.style
 
 import kotlinx.css.*
-import org.yttr.lordle.game.Marker
+import org.yttr.wormdle.game.Marker
 
 object NotesStyle : Style() {
     override fun CssBuilder.apply() {

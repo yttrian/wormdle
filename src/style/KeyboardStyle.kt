@@ -1,8 +1,8 @@
-package org.yttr.lordle.style
+package org.yttr.wormdle.style
 
 import kotlinx.css.*
-import org.yttr.lordle.game.GameController
-import org.yttr.lordle.game.Marker
+import org.yttr.wormdle.game.GameController
+import org.yttr.wormdle.game.Marker
 
 object KeyboardStyle : Style() {
     override fun CssBuilder.apply() {
@@ -23,15 +23,15 @@ object KeyboardStyle : Style() {
         ".board .row" {
             display = Display.flex
             gap = .5.rem
-            margin = ".5rem"
+            margin = Margin(.5.rem)
         }
 
         ".keyboard label, .keyboard button" {
             color = Color.white
             display = Display.flex
-            flex(1.0, 0.0, 0.pct)
+            flex = Flex(1.0, 0.0, 0.pct)
             height = 3.rem
-            border = "none"
+            border = Border.none
             borderRadius = .6.rem
             backgroundColor = Color.gray
             textTransform = TextTransform.uppercase

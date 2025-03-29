@@ -1,4 +1,4 @@
-package org.yttr.lordle.style
+package org.yttr.wormdle.style
 
 import kotlinx.css.*
 
@@ -45,7 +45,7 @@ object ModalStyle : Style() {
             width = 15.rem
             textAlign = TextAlign.center
             fontSize = 1.5.rem
-            padding = "2rem"
+            padding = Padding(2.rem)
             resize = Resize.none
             color = Color.black
             backgroundColor = wormGreen

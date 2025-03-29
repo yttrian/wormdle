@@ -1,54 +1,30 @@
-package org.yttr.lordle.words
+package org.yttr.wormdle.words
 
 import com.typesafe.config.ConfigFactory
-import org.slf4j.LoggerFactory
-import org.yttr.lordle.game.GameController
-import org.yttr.lordle.words.corpora.CorporaBuilder
-import kotlin.random.Random
 
 object Words {
-    private const val WORD_LIST_SPLITS = 3
-
-    private val logger = LoggerFactory.getLogger(javaClass.simpleName)
-    private val config = ConfigFactory.load().getConfig("lordle")
-    private val sources by lazy {
-        val lines = javaClass.classLoader.getResource("words.txt")?.readText()?.lines()
-        lines?.filter { it.isNotBlank() }?.associate {
-            val (word, slug, name) = it.split(" ", limit = WORD_LIST_SPLITS)
-            word to (slug to name)
-        } ?: emptyMap()
-    }
-    private val wordList by lazy {
-        val random = Random(config.getInt("seed"))
-        sources.keys.shuffled(random)
-    }
-    private lateinit var dicitonary: Set<String>
+    private val config = ConfigFactory.load().getConfig("wormdle")
+    private val infiniteSolutions = InfiniteSolutions(config.getInt("seed"))
 
     /**
-     * Warm the dictionary
+     * All dictionary words and solutions
      */
-    suspend fun warm() {
-        if (!this::dicitonary.isInitialized) {
-            dicitonary = CorporaBuilder.buildWordSet(GameController.WORD_LENGTH) + wordList
-            logger.info("Warmed the dictionary with ${dicitonary.size} words")
-        }
+    private val dictionary: Set<String> by lazy {
+        val corpus = Corpus().getWords()
+        val solutions = infiniteSolutions.getSolutions().map { it.word }
+
+        corpus + solutions
     }
 
     /**
      * Check if a word is in the dictionary
      */
-    suspend fun inDictionary(word: String): Boolean {
-        warm()
-        return dicitonary.contains(word)
+    fun inDictionary(word: String): Boolean {
+        return dictionary.contains(word)
     }
 
     /**
      * Get the word of the day
      */
-    fun forDay(day: Int) = wordList.getOrNull(day)
-
-    /**
-     * Get the source of a word
-     */
-    fun source(word: String) = sources.getValue(word)
+    fun forDay(day: Int) = infiniteSolutions.sequenceSolutions().elementAt(day)
 }

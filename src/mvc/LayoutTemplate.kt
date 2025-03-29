@@ -1,13 +1,13 @@
-package org.yttr.lordle.mvc
+package org.yttr.wormdle.mvc
 
-import io.ktor.html.*
 import io.ktor.http.*
+import io.ktor.server.html.*
 import kotlinx.html.*
-import org.yttr.lordle.style.ModalStyle
-import org.yttr.lordle.style.WormdleStyle
+import org.yttr.wormdle.style.ModalStyle
+import org.yttr.wormdle.style.WormdleStyle
 
 class LayoutTemplate(request: RequestConnectionPoint) : Template<HTML> {
-    private val baseUrl = "https://${request.host}"
+    private val baseUrl = "https://${request.serverHost}"
     val content = Placeholder<FlowContent>()
 
     override fun HTML.apply() {
@@ -23,7 +23,7 @@ class LayoutTemplate(request: RequestConnectionPoint) : Template<HTML> {
             script(src = "/webjars/hotwired__turbo/turbo.es2017-esm.js") { type = "module" }
             comment("Social media")
             meta("og:url", baseUrl)
-            meta("og:title", "Wormdle - A daily Destiny lordle wordle")
+            meta("og:title", "Wormdle - A daily Destiny wormdle wordle")
             meta("og:type", "website")
             meta("og:description", description)
             meta("og:image", "$baseUrl/images/serindoodles_wormdle.png")

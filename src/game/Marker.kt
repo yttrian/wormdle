@@ -1,4 +1,4 @@
-package org.yttr.lordle.game
+package org.yttr.wormdle.game
 
 import kotlinx.css.Color
 

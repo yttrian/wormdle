@@ -1,14 +1,14 @@
-package org.yttr.lordle.style
+package org.yttr.wormdle.style
 
 import kotlinx.css.*
-import org.yttr.lordle.game.GameController
-import org.yttr.lordle.game.Marker
+import org.yttr.wormdle.game.GameController
+import org.yttr.wormdle.game.Marker
 
 object DisplayStyle : Style() {
     override fun CssBuilder.apply() {
         ".display" {
             display = Display.grid
-            flex(1.0, 1.0, 0.pct)
+            flex = Flex(1.0, 1.0, 0.pct)
             justifyContent = JustifyContent.center
             alignContent = Align.center
         }
@@ -26,8 +26,8 @@ object DisplayStyle : Style() {
             height = 3.rem
             width = 3.rem
             color = Color.white
-            margin = ".2rem"
-            border = ".2rem solid white"
+            margin = Margin(.2.rem)
+            border = Border(.2.rem, BorderStyle.solid, Color.white)
             fontSize = 2.rem
         }
 

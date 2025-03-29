@@ -1,4 +1,4 @@
-package org.yttr.lordle.style
+package org.yttr.wormdle.style
 
 import kotlinx.css.Color
 import kotlinx.css.CssBuilder

@@ -1,4 +1,4 @@
-package org.yttr.lordle.style
+package org.yttr.wormdle.style
 
 import kotlinx.css.*
 
@@ -28,8 +28,8 @@ object WormdleStyle : Style() {
             color = Color.white
             fontFamily = defaultFonts.joinToString()
             height = 100.pct
-            margin = "0"
-            padding = "0"
+            margin = Margin(0.px)
+            padding = Padding(0.px)
             display = Display.flex
             flexDirection = FlexDirection.column
         }
@@ -42,7 +42,7 @@ object WormdleStyle : Style() {
             display = Display.flex
             flexDirection = FlexDirection.column
             alignItems = Align.center
-            flex(1.0, 0.0, 0.pct)
+            flex= Flex(1.0, 0.0, 0.pct)
         }
 
         append(HeaderStyle)

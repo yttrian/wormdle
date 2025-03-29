@@ -1,8 +1,9 @@
-package org.yttr.lordle.game
+package org.yttr.wormdle.game
 
 import kotlinx.html.*
-import org.yttr.lordle.mvc.LayoutTemplate
-import org.yttr.lordle.mvc.View
+import org.yttr.wormdle.mvc.LayoutTemplate
+import org.yttr.wormdle.mvc.View
+import org.yttr.wormdle.words.link
 
 object GameView : View<GameModel> {
     private const val WORD_LENGTH: Int = GameController.WORD_LENGTH
@@ -28,7 +29,7 @@ object GameView : View<GameModel> {
                     val finalCount = if (model.isWin) model.session.guesses.size.toString() else "X"
                     +"$title $finalCount/$MAX_ATTEMPTS\n\n"
                     +model.session.guesses.joinToString("\n") { guess ->
-                        Marker.generate(model.word, guess).joinToString("") { it.emoji }
+                        Marker.generate(model.solution.word, guess).joinToString("") { it.emoji }
                     }
                 }
             }
@@ -47,9 +48,9 @@ object GameView : View<GameModel> {
                             }
                         }
                         if (model.isOver) {
-                            +"\"${model.word}\" from "
-                            a("https://www.ishtar-collective.net/${model.slug}?highlight=${model.word}") {
-                                +model.name
+                            +"\"${model.solution.word}\" from "
+                            a(model.solution.link()) {
+                                +model.solution.name
                             }
                         }
                     }
@@ -61,11 +62,11 @@ object GameView : View<GameModel> {
     }
 
     private fun hintClasses(model: GameModel): List<String> {
-        val here = model.word.mapIndexedNotNull { index, c ->
+        val here = model.solution.word.mapIndexedNotNull { index, c ->
             if (model.session.guesses.any { it[index] == c }) "$c-here" else null
         }
 
-        val wordLetters = model.word.toSet()
+        val wordLetters = model.solution.word.toSet()
         val guessedLetters = model.session.guesses.flatMap { it.toSet() }
 
         val somewhere = guessedLetters.intersect(wordLetters).map { c -> "$c-somewhere" }
@@ -96,7 +97,7 @@ object GameView : View<GameModel> {
                     }
                 } else {
                     val guess = model.session.guesses.getOrNull(attempt)
-                    val markers = Marker.generate(model.word, guess ?: "")
+                    val markers = Marker.generate(model.solution.word, guess ?: "")
                     (0 until WORD_LENGTH).forEach { l ->
                         val c = guess?.getOrNull(l)?.toString() ?: ""
                         div("letter " + (markers.getOrNull(l)?.toString() ?: "")) {

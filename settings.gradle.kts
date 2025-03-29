@@ -1,3 +1,5 @@
+rootProject.name = "wormdle"
+
 pluginManagement {
     repositories {
         mavenCentral()

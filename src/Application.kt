@@ -1,50 +1,41 @@
-package org.yttr.lordle
+package org.yttr.wormdle
 
-import io.ktor.application.*
-import io.ktor.features.*
 import io.ktor.http.*
 import io.ktor.http.content.*
-import io.ktor.response.*
-import io.ktor.routing.*
-import io.ktor.sessions.*
-import io.ktor.webjars.*
-import org.yttr.lordle.game.GameController
-import org.yttr.lordle.mvc.route
-import org.yttr.lordle.style.WormdleStyle
+import io.ktor.server.application.*
+import io.ktor.server.http.content.*
+import io.ktor.server.plugins.cachingheaders.*
+import io.ktor.server.plugins.calllogging.*
+import io.ktor.server.plugins.defaultheaders.*
+import io.ktor.server.response.*
+import io.ktor.server.routing.*
+import io.ktor.server.sessions.*
+import io.ktor.server.webjars.*
+import kotlinx.serialization.Serializable
+import org.yttr.wormdle.game.GameController
+import org.yttr.wormdle.mvc.route
+import org.yttr.wormdle.style.WormdleStyle
 import java.time.Duration
 
-fun main(args: Array<String>): Unit = io.ktor.server.cio.EngineMain.main(args)
+fun main(args: Array<String>): Unit = io.ktor.server.netty.EngineMain.main(args)
 
 private const val DAYS_IN_YEAR: Long = 365
 private val oneYear = Duration.ofDays(DAYS_IN_YEAR).toSeconds()
 
 @Suppress("unused", "LongMethod")
 fun Application.module() {
-    install(AutoHeadResponse)
-
     install(CallLogging)
-
-    install(Compression)
-
-    install(ConditionalHeaders)
 
     install(CachingHeaders) {
         val cacheOneYear = CachingOptions(CacheControl.MaxAge(maxAgeSeconds = oneYear.toInt()))
-        options { outgoingContent ->
-            when (outgoingContent.contentType?.withoutParameters()) {
+        options { _, content ->
+            when (content.contentType?.withoutParameters()) {
                 ContentType.Text.CSS -> cacheOneYear
                 ContentType.Text.JavaScript -> cacheOneYear
                 ContentType.Image.XIcon -> cacheOneYear
                 else -> null
             }
         }
-    }
-
-    install(XForwardedHeaderSupport)
-
-    if (!developmentMode) {
-        install(HttpsRedirect)
-        install(HSTS)
     }
 
     install(DefaultHeaders) {
@@ -71,7 +62,7 @@ fun Application.module() {
     install(Sessions) {
         cookie<WormdleSession>("WORMDLE_STATE") {
             cookie.maxAgeInSeconds = oneYear
-            cookie.secure = !developmentMode
+            cookie.secure = true
             cookie.encoding = CookieEncoding.BASE64_ENCODING
         }
     }
@@ -81,17 +72,14 @@ fun Application.module() {
 
         // https://ktor.io/docs/css-dsl.html#use_css
         get("/${WormdleStyle.filename}") {
-            context.respondText(WormdleStyle.content, ContentType.Text.CSS)
+            call.respondText(WormdleStyle.content, ContentType.Text.CSS)
         }
 
-        static {
-            route("images") {
-                resources("images")
-            }
-        }
+        staticResources("images", "images")
     }
 }
 
+@Serializable
 data class WormdleSession(
     val day: Int,
     val guesses: List<String> = emptyList(),
