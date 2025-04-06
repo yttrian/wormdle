@@ -4,6 +4,7 @@ import io.ktor.http.*
 import io.ktor.http.content.*
 import io.ktor.server.application.*
 import io.ktor.server.http.content.*
+import io.ktor.server.plugins.autohead.*
 import io.ktor.server.plugins.cachingheaders.*
 import io.ktor.server.plugins.calllogging.*
 import io.ktor.server.plugins.defaultheaders.*
@@ -24,6 +25,8 @@ private val oneYear = Duration.ofDays(DAYS_IN_YEAR).toSeconds()
 
 @Suppress("unused", "LongMethod")
 fun Application.module() {
+    install(AutoHeadResponse)
+
     install(CallLogging)
 
     install(CachingHeaders) {

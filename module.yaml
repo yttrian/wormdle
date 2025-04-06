@@ -4,6 +4,7 @@ product:
 dependencies:
   - $libs.kotlin.css
   - $libs.kotlinx.html
+  - $libs.ktor.server.auto.head.response
   - $libs.ktor.server.caching.headers
   - $libs.ktor.server.call.logging
   - $libs.ktor.server.content.negotiation

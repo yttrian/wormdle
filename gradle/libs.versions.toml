@@ -4,6 +4,7 @@ ktor = "3.1.1"
 [libraries]
 kotlin-css = { module = "org.jetbrains.kotlin-wrappers:kotlin-css", version = "2025.3.21" }
 kotlinx-html = { module = "org.jetbrains.kotlinx:kotlinx-html", version = "0.12.0" }
+ktor-server-auto-head-response = { module = "io.ktor:ktor-server-auto-head-response", version.ref = "ktor" }
 ktor-server-caching-headers = { module = "io.ktor:ktor-server-caching-headers", version.ref="ktor"}
 ktor-server-call-logging = { module = "io.ktor:ktor-server-call-logging", version.ref = "ktor" }
 ktor-server-content-negotiation = { module = "io.ktor:ktor-server-content-negotiation", version.ref = "ktor" }
