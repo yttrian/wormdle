@@ -3,6 +3,7 @@ package org.yttr.wormdle.game
 import kotlinx.html.*
 import org.yttr.wormdle.mvc.LayoutTemplate
 import org.yttr.wormdle.mvc.View
+import org.yttr.wormdle.words.Words
 import org.yttr.wormdle.words.link
 
 object GameView : View<GameModel> {
@@ -14,8 +15,8 @@ object GameView : View<GameModel> {
         content {
             val title = "Wormdle ${model.session.day + 1}"
             header {
-                h1 { +title }
-                small { +"Resets daily at 9 AM Pacific" }
+                h1 { +"$title  of ∞" }
+                small { +"Resets daily at 9 AM Pacific. Words repeat on average every ${Words.totalSolutions()} days." }
             }
 
             input(InputType.checkBox) {

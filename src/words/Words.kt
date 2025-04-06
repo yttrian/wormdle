@@ -27,4 +27,9 @@ object Words {
      * Get the word of the day
      */
     fun forDay(day: Int) = infiniteSolutions.sequenceSolutions().elementAt(day)
+
+    /**
+     * Get the total number of solutions
+     */
+    fun totalSolutions() = infiniteSolutions.getSolutions().count()
 }
