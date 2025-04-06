@@ -1,0 +1,21 @@
+[versions]
+ktor = "3.1.1"
+
+[libraries]
+kotlin-css = { module = "org.jetbrains.kotlin-wrappers:kotlin-css", version = "2025.3.21" }
+kotlinx-html = { module = "org.jetbrains.kotlinx:kotlinx-html", version = "0.12.0" }
+ktor-server-caching-headers = { module = "io.ktor:ktor-server-caching-headers", version.ref="ktor"}
+ktor-server-call-logging = { module = "io.ktor:ktor-server-call-logging", version.ref = "ktor" }
+ktor-server-content-negotiation = { module = "io.ktor:ktor-server-content-negotiation", version.ref = "ktor" }
+ktor-server-core = { module = "io.ktor:ktor-server-core", version.ref = "ktor" }
+ktor-server-default-headers = { module = "io.ktor:ktor-server-default-headers", version.ref = "ktor"}
+ktor-server-html-builder = { module = "io.ktor:ktor-server-html-builder", version.ref = "ktor" }
+ktor-server-netty = { module = "io.ktor:ktor-server-netty", version.ref = "ktor" }
+ktor-server-sessions = { module = "io.ktor:ktor-server-sessions", version.ref = "ktor" }
+ktor-server-test-host = { module = "io.ktor:ktor-server-test-host", version.ref = "ktor" }
+ktor-server-webjars = { module = "io.ktor:ktor-server-webjars", version.ref = "ktor" }
+logback-classic = { module = "ch.qos.logback:logback-classic", version = "1.4.14" }
+webjars-hotwired-turbo = { module = "org.webjars.npm:hotwired__turbo", version = "8.0.12" }
+
+[plugins]
+ktor = { id = "io.ktor.plugin", version.ref = "ktor" }

@@ -1,1 +1,1 @@
-web: ./build/install/lordle/bin/lordle
+web: ./build/install/wormdle/bin/wormdle

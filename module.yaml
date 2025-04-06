@@ -1,0 +1,27 @@
+product:
+  type: jvm/app
+
+dependencies:
+  - $libs.kotlin.css
+  - $libs.kotlinx.html
+  - $libs.ktor.server.caching.headers
+  - $libs.ktor.server.call.logging
+  - $libs.ktor.server.content.negotiation
+  - $libs.ktor.server.core
+  - $libs.ktor.server.default.headers
+  - $libs.ktor.server.html.builder
+  - $libs.ktor.server.netty
+  - $libs.ktor.server.sessions
+  - $libs.ktor.server.webjars
+  - $libs.logback.classic
+  - $libs.webjars.hotwired.turbo
+
+test-dependencies:
+  - $libs.ktor.server.test.host
+  - $kotlin.test.junit5
+
+settings:
+  jvm:
+    mainClass: io.ktor.server.netty.EngineMain
+  kotlin:
+    serialization: json
